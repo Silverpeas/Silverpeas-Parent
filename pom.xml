@@ -511,15 +511,20 @@
       </dependency>
       <!-- pb version -->
       <dependency>
-    <groupId>com.drewnoakes</groupId>
-    <artifactId>metadata-extractor</artifactId>
-    <version>2.4.0-beta-1</version>
-</dependency> 
+        <groupId>com.drewnoakes</groupId>
+        <artifactId>metadata-extractor</artifactId>
+        <version>2.4.0-beta-1</version>
+      </dependency> 
       <dependency>
         <groupId>org.textmining</groupId>
         <artifactId>tm-extractors</artifactId>
         <version>0.4</version>
       </dependency>
+      <dependency>
+        <groupId>net.fortuna.ical4j</groupId>
+        <artifactId>ical4j</artifactId>
+      <version>1.0-rc2</version>
+    </dependency>
     </dependencies>
   </dependencyManagement>
 
