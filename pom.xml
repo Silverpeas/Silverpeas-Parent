@@ -616,6 +616,58 @@
         <artifactId>mail</artifactId>
         <version>1.4.1</version>
       </dependency>
+      <dependency>
+        <groupId>com.ecyrd.jspwiki</groupId>
+        <artifactId>jspwiki</artifactId>
+        <version>2.8.1</version>
+        <classifier>silverpeas</classifier>
+      </dependency>
+      <dependency>
+        <groupId>com.metaparadigm</groupId>
+        <artifactId>json-rpc</artifactId>
+        <version>1.0</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.ws.xmlrpc</groupId>
+        <artifactId>xmlrpc</artifactId>
+        <version>2.0.1</version>
+      </dependency>
+      <dependency>
+        <groupId>sandler</groupId>
+        <artifactId>sandler</artifactId>
+        <version>1.0</version>
+      </dependency>
+      <dependency>
+        <groupId>jaxen</groupId>
+        <artifactId>jaxen</artifactId>
+        <version>1.1.1</version>
+      </dependency>
+      <dependency>
+      <groupId>commons-jrcs</groupId>
+      <artifactId>jrcs-diff</artifactId>
+      <version>0.2</version>
+    </dependency>
+    <dependency>
+      <groupId>org.freshcookies</groupId>
+      <artifactId>freshcookies-security</artifactId>
+      <version>0.60</version>
+    </dependency>
+    <dependency>
+      <groupId>opensymphony</groupId>
+      <artifactId>oscache</artifactId>
+      <version>2.4</version>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.jms</groupId>
+          <artifactId>jms</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+      <dependency>
+        <groupId>oro</groupId>
+        <artifactId>oro</artifactId>
+        <version>2.0.8</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
