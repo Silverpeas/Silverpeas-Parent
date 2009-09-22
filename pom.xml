@@ -491,7 +491,7 @@
       <dependency>
         <groupId>org.jdom</groupId>
         <artifactId>jdom</artifactId>
-        <version>1.1</version>
+        <version>1.1.1</version>
       </dependency>
       <dependency>
         <groupId>net.htmlparser.jericho</groupId>
@@ -712,6 +712,11 @@
         <groupId>jtidy</groupId>
         <artifactId>jtidy</artifactId>
         <version>4aug2000r7-dev</version>
+      </dependency>
+      <dependency>
+        <groupId>com.thoughtworks.xstream</groupId>
+        <artifactId>xstream</artifactId>
+        <version>1.2.1</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
