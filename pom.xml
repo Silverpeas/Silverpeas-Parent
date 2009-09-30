@@ -10,6 +10,82 @@
   <name>parent</name>
   <url>http://www.silverpeas.com</url>
 
+  <scm>
+    <connection>scm:svn:https://repository.silverpeas.org/svn/silverpeas/parent/</connection>
+    <developerConnection>scm:svn:https://repository.silverpeas.org/svn/silverpeas/parent/</developerConnection>
+    <url>https://repository.silverpeas.org/svn/silverpeas/parent/trunk/</url>
+  </scm>
+
+
+  <developers>
+    <developer>
+      <id>Emmanuel_Hugonnet</id>
+      <name>Emmanuel Hugonnet</name>
+      <roles>
+        <role>Developper</role>
+        <role>Architect</role>
+      </roles>
+      <organization>Silverpeas.com</organization>
+      <timezone>+1</timezone>
+    </developer>
+    <developer>
+      <id>Cecile_Bonin</id>
+      <name>Cécile Bonin</name>
+      <roles>
+        <role>Developper</role>
+        <role>Project Manager</role>
+      </roles>
+      <organization>Silverpeas.com</organization>
+      <timezone>+1</timezone>
+    </developer>
+    <developer>
+      <id>David_Lesimple</id>
+      <name>David Lesimple</name>
+      <roles>
+        <role>Developper</role>
+        <role>Project Manager</role>
+      </roles>
+      <organization>Silverpeas.com</organization>
+      <timezone>+1</timezone>
+    </developer>
+    <developer>
+      <id>Nicolas_Eysseric</id>
+      <name>Nicolas Eysseric</name>
+      <roles>
+        <role>Developper</role>
+        <role>Project Manager</role>
+        <role>CTO</role>
+      </roles>
+      <organization>Silverpeas.com</organization>
+      <timezone>+1</timezone>
+    </developer>
+    <developer>
+      <id>Stephanie_Fariello</id>
+      <name>Stéphanie Fariello</name>
+      <roles>
+        <role>Developper</role>
+        <role>Project Manager</role>
+      </roles>
+      <organization>Silverpeas.com</organization>
+      <timezone>+1</timezone>
+    </developer>
+    <developer>
+      <id>Jocelyn_Lecomte</id>
+      <name>Jocelyn Lecomte</name>
+      <roles>
+        <role>Developper</role>
+        <role>Project Manager</role>
+      </roles>
+      <organization>Silverpeas.com</organization>
+      <timezone>+1</timezone>
+    </developer>
+  </developers>
+
+  <issueManagement>
+    <system>Redmine</system>
+    <url>https://repository.silverpeas.org/redmine/</url>
+  </issueManagement>
+
   <distributionManagement>
     <repository>
       <id>silverpeas</id>
@@ -23,7 +99,21 @@
       <layout>default</layout>
       <url>dav:http://repository.silverpeas.org/nexus/content/repositories/snapshots/</url>
     </snapshotRepository>
+    <site>
+      <id>silverpeas.org</id>
+      <url>scp://repository.silverpeas.org/www/var/docs/project/</url>
+    </site>
+
   </distributionManagement>
+
+  <repositories>
+    <repository>
+      <id>EclipseSilverpeas</id>
+      <layout>default</layout>
+      <name>Silverpeas Repository</name>
+      <url>http://repository.silverpeas.org/nexus/content/groups/silverpeas</url>
+    </repository>
+  </repositories>
 
   <dependencyManagement>
     <dependencies>
@@ -796,7 +886,7 @@
           <artifactId>maven-source-plugin</artifactId>
           <version>2.1</version>
         </plugin>
-         <plugin>
+        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>2.6</version>
@@ -815,13 +905,74 @@
           <groupId>org.silverpeas.services</groupId>
           <artifactId>code-formatter-plugin</artifactId>
           <version>1.1</version>
+          <configuration>
+            <configurationFile>formatter/formatter.prefs</configurationFile>
+          </configuration>
+          <executions>
+            <execution>
+              <id>format</id>
+              <phase>generate-sources</phase>
+              <goals>
+                <goal>format</goal>
+              </goals>
+            </execution>
+          </executions>
+          <dependencies>
+            <dependency>
+              <groupId>com.silverpeas</groupId>
+              <artifactId>assembly-configuration</artifactId>
+              <version>${config.version}</version>
+            </dependency>
+          </dependencies>
         </plugin>
       </plugins>
     </pluginManagement>
   </build>
 
+  <profiles>
+    <profile>
+      <id>license</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>com.google.code.maven-license-plugin</groupId>
+            <artifactId>maven-license-plugin</artifactId>
+            <configuration>
+              <header>license/silverpeas-license.txt</header>
+              <quiet>true</quiet>
+              <excludes>
+                <exclude>**/*.txt</exclude>
+                <exclude>**/*.sql</exclude>
+                <exclude>**/*.js</exclude>
+                <exclude>**/*.html</exclude>
+                <exclude>**/fckeditor/**/*.*</exclude>
+              </excludes>
+            </configuration>
+            <executions>
+              <execution>
+                <id>header</id>
+                <phase>generate-sources</phase>
+                <goals>
+                  <goal>format</goal>
+                </goals>
+              </execution>
+            </executions>
+            <dependencies>
+              <dependency>
+                <groupId>com.silverpeas</groupId>
+                <artifactId>assembly-configuration</artifactId>
+                <version>${config.version}</version>
+              </dependency>
+            </dependencies>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
+
   <properties>
     <core.version>1.0-SNAPSHOT</core.version>
     <kernel.version>1.0-SNAPSHOT</kernel.version>
+    <config.version>1.0-SNAPSHOT</config.version>
   </properties>
 </project>
