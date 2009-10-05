@@ -8,83 +8,19 @@
   <groupId>com.silverpeas</groupId>
   <version>1.0-SNAPSHOT</version>
   <name>parent</name>
-  <url>http://www.silverpeas.com</url>
+  <organization>
+    <name>Silverpeas</name>
+    <url>http://www.silverpeas.com</url>
+  </organization>
+  <url>http://repository.silverpeas.org</url>
 
-  <scm>
-    <connection>scm:svn:https://repository.silverpeas.org/svn/silverpeas/parent/</connection>
-    <developerConnection>scm:svn:https://repository.silverpeas.org/svn/silverpeas/parent/</developerConnection>
-    <url>https://repository.silverpeas.org/svn/silverpeas/parent/trunk/</url>
-  </scm>
-
-
-  <developers>
-    <developer>
-      <id>Emmanuel_Hugonnet</id>
-      <name>Emmanuel Hugonnet</name>
-      <roles>
-        <role>Developper</role>
-        <role>Architect</role>
-      </roles>
-      <organization>Silverpeas.com</organization>
-      <timezone>+1</timezone>
-    </developer>
-    <developer>
-      <id>Cecile_Bonin</id>
-      <name>Cécile Bonin</name>
-      <roles>
-        <role>Developper</role>
-        <role>Project Manager</role>
-      </roles>
-      <organization>Silverpeas.com</organization>
-      <timezone>+1</timezone>
-    </developer>
-    <developer>
-      <id>David_Lesimple</id>
-      <name>David Lesimple</name>
-      <roles>
-        <role>Developper</role>
-        <role>Project Manager</role>
-      </roles>
-      <organization>Silverpeas.com</organization>
-      <timezone>+1</timezone>
-    </developer>
-    <developer>
-      <id>Nicolas_Eysseric</id>
-      <name>Nicolas Eysseric</name>
-      <roles>
-        <role>Developper</role>
-        <role>Project Manager</role>
-        <role>CTO</role>
-      </roles>
-      <organization>Silverpeas.com</organization>
-      <timezone>+1</timezone>
-    </developer>
-    <developer>
-      <id>Stephanie_Fariello</id>
-      <name>Stéphanie Fariello</name>
-      <roles>
-        <role>Developper</role>
-        <role>Project Manager</role>
-      </roles>
-      <organization>Silverpeas.com</organization>
-      <timezone>+1</timezone>
-    </developer>
-    <developer>
-      <id>Jocelyn_Lecomte</id>
-      <name>Jocelyn Lecomte</name>
-      <roles>
-        <role>Developper</role>
-        <role>Project Manager</role>
-      </roles>
-      <organization>Silverpeas.com</organization>
-      <timezone>+1</timezone>
-    </developer>
-  </developers>
-
-  <issueManagement>
-    <system>Redmine</system>
-    <url>https://repository.silverpeas.org/redmine/</url>
-  </issueManagement>
+  <licenses>
+    <license>
+      <name>GNU Affero General Public License with FLOSS Exception</name>
+      <distribution>repo</distribution>
+      <url>http://repository.silverpeas.org/legal/gnu_affero.html</url>
+    </license>
+  </licenses>
 
   <distributionManagement>
     <repository>
@@ -101,17 +37,138 @@
     </snapshotRepository>
     <site>
       <id>silverpeas.org</id>
-      <url>scp://repository.silverpeas.org/www/var/docs/project/</url>
+      <url>scp://repository.silverpeas.org/var/www/docs</url>
     </site>
-
   </distributionManagement>
+
+
+  <scm>
+    <connection>scm:svn:https://repository.silverpeas.org/svn/silverpeas/parent/</connection>
+    <developerConnection>scm:svn:https://repository.silverpeas.org/svn/silverpeas/parent/</developerConnection>
+    <url>https://repository.silverpeas.org/svn/silverpeas/parent/trunk/</url>
+  </scm>
+
+  <developers>
+    <developer>
+      <id>ehugonnet</id>
+      <name>Emmanuel Hugonnet</name>
+      <roles>
+        <role>Developper</role>
+        <role>Architect</role>
+      </roles>
+      <organization>Silverpeas.com</organization>
+      <organizationUrl>http://www.silverpeas.com</organizationUrl>
+    </developer>
+    <developer>
+      <id>cbonin</id>
+      <name>Cécile Bonin</name>
+      <roles>
+        <role>Developper</role>
+        <role>Project Manager</role>
+      </roles>
+      <organization>Silverpeas.com</organization>
+      <organizationUrl>http://www.silverpeas.com</organizationUrl>
+    </developer>
+    <developer>
+      <id>dlesimple</id>
+      <name>David Lesimple</name>
+      <roles>
+        <role>Developper</role>
+        <role>Project Manager</role>
+      </roles>
+      <organization>Silverpeas.com</organization>
+      <organizationUrl>http://www.silverpeas.com</organizationUrl>
+    </developer>
+    <developer>
+      <id>neysseric</id>
+      <name>Nicolas Eysseric</name>
+      <roles>
+        <role>Developper</role>
+        <role>Project Manager</role>
+        <role>CTO</role>
+      </roles>
+      <organization>Silverpeas.com</organization>
+      <organizationUrl>http://www.silverpeas.com</organizationUrl>
+    </developer>
+    <developer>
+      <id>sfariello</id>
+      <name>Stéphanie Fariello</name>
+      <roles>
+        <role>Developper</role>
+        <role>Project Manager</role>
+      </roles>
+      <organization>Silverpeas.com</organization>
+      <organizationUrl>http://www.silverpeas.com</organizationUrl>
+    </developer>
+    <developer>
+      <id>jlecomte</id>
+      <name>Jocelyn Lecomte</name>
+      <roles>
+        <role>Developper</role>
+        <role>Project Manager</role>
+      </roles>
+      <organization>Silverpeas</organization>
+      <organizationUrl>http://www.silverpeas.com</organizationUrl>
+    </developer>
+    <developer>
+      <id>lbertin</id>
+      <name>Ludovic Bertin</name>
+      <roles>
+        <role>Architect</role>
+        <role>Project Manager</role>
+      </roles>
+      <organization>Oosphere</organization>
+      <organizationUrl>http://www.oosphere.ch</organizationUrl>
+    </developer>
+    <developer>
+      <id>ahedin</id>
+      <name>Antoine Hedin</name>
+      <roles>
+        <role>Architect</role>
+        <role>Project Manager</role>
+      </roles>
+      <organization>Oosphere</organization>
+      <organizationUrl>http://www.oosphere.ch</organizationUrl>
+    </developer>
+    <developer>
+      <id>cgrand</id>
+      <name>Céline Grand</name>
+      <roles>
+        <role>Developper</role>
+        <role>Project Manager</role>
+      </roles>
+      <organization>Oosphere</organization>
+      <organizationUrl>http://www.oosphere.ch</organizationUrl>
+    </developer>
+    <developer>
+      <id>pbazart</id>
+      <name>Philippe Bazart</name>
+      <roles>
+        <role>CTO</role>
+        <role>Project Manager</role>
+      </roles>
+      <organization>Oevo</organization>
+      <organizationUrl>http://www.oevo.com</organizationUrl>
+    </developer>
+  </developers>
+
+  <issueManagement>
+    <system>Redmine</system>
+    <url>https://repository.silverpeas.org/redmine/</url>
+  </issueManagement>
 
   <repositories>
     <repository>
-      <id>EclipseSilverpeas</id>
+      <id>Silverpeas</id>
       <layout>default</layout>
       <name>Silverpeas Repository</name>
       <url>http://repository.silverpeas.org/nexus/content/groups/silverpeas</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
     </repository>
   </repositories>
 
