@@ -255,12 +255,12 @@
       <dependency>
         <groupId>org.apache.poi</groupId>
         <artifactId>poi</artifactId>
-        <version>3.2-FINAL</version>
+        <version>${poi.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.poi</groupId>
         <artifactId>poi-scratchpad</artifactId>
-        <version>3.2-FINAL</version>
+        <version>${poi.version}</version>
       </dependency>
       <dependency>
         <groupId>bouncycastle</groupId>
@@ -316,7 +316,7 @@
       <dependency>
         <groupId>commons-digester</groupId>
         <artifactId>commons-digester</artifactId>
-        <version>1.5</version>
+        <version>1.7</version>
       </dependency>
       <dependency>
         <groupId>commons-fileupload</groupId>
@@ -327,11 +327,17 @@
         <groupId>commons-httpclient</groupId>
         <artifactId>commons-httpclient</artifactId>
         <version>3.0.1</version>
+        <exclusions>
+          <exclusion>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>commons-io</groupId>
         <artifactId>commons-io</artifactId>
-        <version>1.3.2</version>
+        <version>1.4</version>
       </dependency>
       <dependency>
         <groupId>commons-lang</groupId>
@@ -381,12 +387,12 @@
       <dependency>
         <groupId>org.apache.jackrabbit</groupId>
         <artifactId>jackrabbit-api</artifactId>
-        <version>1.4</version>
+        <version>1.6.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.jackrabbit</groupId>
         <artifactId>jackrabbit-core</artifactId>
-        <version>1.4.9</version>
+        <version>1.6.0</version>
         <exclusions>
           <exclusion>
             <groupId>org.apache.lucene</groupId>
@@ -401,7 +407,7 @@
       <dependency>
         <groupId>org.apache.jackrabbit</groupId>
         <artifactId>jackrabbit-jcr-commons</artifactId>
-        <version>1.4.2</version>
+        <version>1.6.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.jackrabbit</groupId>
@@ -411,7 +417,7 @@
       <dependency>
         <groupId>org.apache.jackrabbit</groupId>
         <artifactId>jackrabbit-jcr-server</artifactId>
-        <version>1.4.1</version>
+        <version>1.6.0</version>
         <exclusions>
           <exclusion>
             <groupId>org.slf4j</groupId>
@@ -431,17 +437,17 @@
       <dependency>
         <groupId>org.apache.jackrabbit</groupId>
         <artifactId>jackrabbit-spi</artifactId>
-        <version>1.4</version>
+        <version>1.6.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.jackrabbit</groupId>
         <artifactId>jackrabbit-spi-commons</artifactId>
-        <version>1.4</version>
+        <version>1.6.0</version>
       </dependency>
       <dependency>
         <groupId>org.apache.jackrabbit</groupId>
         <artifactId>jackrabbit-text-extractors</artifactId>
-        <version>1.4</version>
+        <version>1.6.0</version>
         <exclusions>
           <exclusion>
             <groupId>poi</groupId>
@@ -452,7 +458,7 @@
       <dependency>
         <groupId>org.apache.jackrabbit</groupId>
         <artifactId>jackrabbit-webdav</artifactId>
-        <version>1.4</version>
+        <version>1.6.0</version>
         <exclusions>
           <exclusion>
             <groupId>org.slf4j</groupId>
@@ -526,12 +532,17 @@
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-api</artifactId>
-        <version>1.5.6</version>
+        <version>${slf4j.version}</version>
       </dependency>
       <dependency>
         <groupId>org.slf4j</groupId>
         <artifactId>slf4j-log4j12</artifactId>
-        <version>1.5.6</version>
+        <version>${slf4j.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.slf4j</groupId>
+        <artifactId>jcl-over-slf4j</artifactId>
+        <version>${slf4j.version}</version>
       </dependency>
       <dependency>
         <groupId>log4j</groupId>
@@ -628,12 +639,12 @@
       <dependency>
         <groupId>org.apache.lucene</groupId>
         <artifactId>lucene-core</artifactId>
-        <version>2.3.2</version>
+        <version>${lucene.version}</version>
       </dependency>
       <dependency>
         <groupId>org.apache.lucene</groupId>
         <artifactId>lucene-analyzers</artifactId>
-        <version>2.3.2</version>
+        <version>${lucene.version}</version>
       </dependency>
       <dependency>
         <groupId>org.jdom</groupId>
@@ -872,9 +883,19 @@
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.0.2</version>
         <configuration>
           <source>1.6</source>
           <target>1.6</target>
+          <encoding>UTF-8</encoding>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>2.4.1</version>
+        <configuration>
+          <encoding>UTF-8</encoding>
         </configuration>
       </plugin>
       <plugin>
@@ -1031,5 +1052,8 @@
     <core.version>1.0-SNAPSHOT</core.version>
     <kernel.version>1.0-SNAPSHOT</kernel.version>
     <config.version>1.0-SNAPSHOT</config.version>
+    <slf4j.version>1.5.6</slf4j.version>
+    <lucene.version>2.4.1</lucene.version>
+    <poi.version>3.2-FINAL</poi.version>
   </properties>
 </project>
