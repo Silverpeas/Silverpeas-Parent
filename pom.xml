@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
   <packaging>pom</packaging>
@@ -1043,6 +1043,10 @@
               </dependency>
             </dependencies>
           </plugin>
+          <plugin>
+            <groupId>org.silverpeas.services</groupId>
+            <artifactId>code-formatter-plugin</artifactId>
+          </plugin>
         </plugins>
       </build>
     </profile>
@@ -1050,7 +1054,6 @@
 
   <properties>
     <core.version>1.0-SNAPSHOT</core.version>
-    <kernel.version>1.0-SNAPSHOT</kernel.version>
     <config.version>1.0-SNAPSHOT</config.version>
     <slf4j.version>1.5.6</slf4j.version>
     <lucene.version>2.4.1</lucene.version>
