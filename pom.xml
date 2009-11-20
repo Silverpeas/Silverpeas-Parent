@@ -984,7 +984,7 @@
           <artifactId>code-formatter-plugin</artifactId>
           <version>1.1</version>
           <configuration>
-            <configurationFile>formatter/formatter.prefs</configurationFile>
+            <configurationFile>formatter/myformatter.prefs</configurationFile>
           </configuration>
           <executions>
             <execution>
