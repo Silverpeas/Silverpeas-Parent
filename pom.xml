@@ -609,6 +609,10 @@
             <groupId>backport-util-concurrent</groupId>
             <artifactId>backport-util-concurrent</artifactId>
           </exclusion>
+          <exclusion>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+          </exclusion>
         </exclusions>
       </dependency>
       <dependency>
@@ -699,7 +703,13 @@
       <dependency>
         <groupId>rome</groupId>
         <artifactId>rome</artifactId>
-        <version>0.9</version>
+        <version>1.0</version>
+        <exclusions>
+          <exclusion>
+            <groupId>jdom</groupId>
+            <artifactId>jdom</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>informa</groupId>
