@@ -720,7 +720,8 @@
       <dependency>
         <groupId>informa</groupId>
         <artifactId>informa</artifactId>
-        <version>0.6.0</version>
+        <version>0.6.5</version>
+        <classifier>silverpeas</classifier>
         <exclusions>
           <exclusion>
             <groupId>jdom</groupId>
