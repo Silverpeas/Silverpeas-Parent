@@ -1045,6 +1045,7 @@
                 <exclude>**/*.js</exclude>
                 <exclude>**/*.html</exclude>
                 <exclude>**/fckeditor/**/*.*</exclude>
+                <exclude>**/com/sun/**/*.java</exclude>
               </excludes>
             </configuration>
             <executions>
