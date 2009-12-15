@@ -17,7 +17,7 @@
     <system>Hudson</system>
     <url>http://integration.silverpeas.org/hudson</url>
   </ciManagement>
-  
+
   <licenses>
     <license>
       <name>GNU Affero General Public License with FLOSS Exception</name>
