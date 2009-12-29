@@ -1003,7 +1003,7 @@
         <plugin>
           <groupId>org.silverpeas.services</groupId>
           <artifactId>code-formatter-plugin</artifactId>
-          <version>1.1</version>
+          <version>1.2</version>
           <configuration>
             <configurationFile>formatter/myformatter.prefs</configurationFile>
           </configuration>
