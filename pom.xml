@@ -903,6 +903,11 @@
         <artifactId>xstream</artifactId>
         <version>1.2.1</version>
       </dependency>
+      <dependency>
+    	<groupId>com.metaparadigm</groupId>
+    	<artifactId>json-rpc</artifactId>
+    	<version>1.0</version>
+	  </dependency> 
     </dependencies>
   </dependencyManagement>
 
