@@ -1006,9 +1006,9 @@
           <version>2.3.1</version>
         </plugin>
         <plugin>
-          <groupId>com.google.code.maven-license-plugin</groupId>
+          <groupId>com.mycila.maven-license-plugin</groupId>
           <artifactId>maven-license-plugin</artifactId>
-          <version>1.4.0</version>
+          <version>1.5.0</version>
         </plugin>
         <plugin>
           <groupId>org.silverpeas.services</groupId>
@@ -1044,7 +1044,7 @@
       <build>
         <plugins>
           <plugin>
-            <groupId>com.google.code.maven-license-plugin</groupId>
+            <groupId>com.mycila.maven-license-plugin</groupId>
             <artifactId>maven-license-plugin</artifactId>
             <configuration>
               <header>license/silverpeas-license.txt</header>
