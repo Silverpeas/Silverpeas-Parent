@@ -174,10 +174,16 @@
         <enabled>true</enabled>
       </snapshots>
     </repository>
+    <repository>
+      <id>no-commons-logging</id>
+      <name>No-commons-logging Maven Repository</name>
+      <layout>default</layout>
+      <url>http://no-commons-logging.zapto.org/mvn2</url>
+    </repository>
   </repositories>
 
   <dependencyManagement>
-    <dependencies>
+    <dependencies>      
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
@@ -353,11 +359,6 @@
         <groupId>commons-lang</groupId>
         <artifactId>commons-lang</artifactId>
         <version>2.3</version>
-      </dependency>
-      <dependency>
-        <groupId>commons-logging</groupId>
-        <artifactId>commons-logging</artifactId>
-        <version>1.0.4</version>
       </dependency>
       <dependency>
         <groupId>commons-pool</groupId>
@@ -553,6 +554,16 @@
         <groupId>org.slf4j</groupId>
         <artifactId>jcl-over-slf4j</artifactId>
         <version>${slf4j.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-logging</groupId>
+        <artifactId>commons-logging</artifactId>
+        <version>99.0-does-not-exist</version>
+      </dependency>
+      <dependency>
+        <groupId>commons-logging</groupId>
+        <artifactId>commons-logging-api</artifactId>
+        <version>99.0-does-not-exist</version>
       </dependency>
       <dependency>
         <groupId>log4j</groupId>
