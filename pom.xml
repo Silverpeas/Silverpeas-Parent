@@ -47,8 +47,8 @@
 
 
   <scm>
-    <connection>scm:svn:https://repository.silverpeas.org/svn/silverpeas/parent/</connection>
-    <developerConnection>scm:svn:https://repository.silverpeas.org/svn/silverpeas/parent/</developerConnection>
+    <connection>scm:svn:https://repository.silverpeas.org/svn/silverpeas/parent/trunk</connection>
+    <developerConnection>scm:svn:https://repository.silverpeas.org/svn/silverpeas/parent/trunk</developerConnection>
     <url>https://repository.silverpeas.org/svn/silverpeas/parent/trunk/</url>
   </scm>
 
@@ -1094,9 +1094,8 @@
     </profile>
   </profiles>
 
-  <properties>
-    <core.version>1.0-SNAPSHOT</core.version>
-    <config.version>1.0-SNAPSHOT</config.version>
+  <properties>    
+    <config.version>1.0</config.version>
     <slf4j.version>1.5.6</slf4j.version>
     <lucene.version>2.4.1</lucene.version>
     <poi.version>3.2-FINAL</poi.version>
