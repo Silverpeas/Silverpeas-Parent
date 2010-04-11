@@ -11,7 +11,7 @@
     <name>Silverpeas</name>
     <url>http://www.silverpeas.com</url>
   </organization>
-  <url>http://repository.silverpeas.org</url>
+  <url>http://www.silverpeas.org</url>
   <ciManagement>
     <system>Hudson</system>
     <url>http://integration.silverpeas.org/hudson</url>
@@ -21,7 +21,7 @@
     <license>
       <name>GNU Affero General Public License with FLOSS Exception</name>
       <distribution>repo</distribution>
-      <url>http://repository.silverpeas.org/legal/gnu_affero.html</url>
+      <url>http://www.silverpeas.org/legal/gnu_affero.html</url>
     </license>
   </licenses>
 
@@ -39,7 +39,7 @@
       <url>http://repository.silverpeas.org/nexus/content/repositories/snapshots/</url>
     </snapshotRepository>
     <site>
-      <id>silverpeas.org</id>
+      <id>silverpeas_repository</id>
       <url>scp://repository.silverpeas.org/var/www/docs</url>
     </site>
   </distributionManagement>
