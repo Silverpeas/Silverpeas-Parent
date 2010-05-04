@@ -5,7 +5,7 @@
   <packaging>pom</packaging>
   <artifactId>parent</artifactId>
   <groupId>com.silverpeas</groupId>
-  <version>7.0-SNAPSHOT</version>
+  <version>7.0</version>
   <name>parent</name>
   <organization>
     <name>Silverpeas</name>
@@ -46,9 +46,9 @@
 
 
   <scm>
-    <connection>scm:svn:https://repository.silverpeas.org/svn/silverpeas/parent/trunk</connection>
-    <developerConnection>scm:svn:https://repository.silverpeas.org/svn/silverpeas/parent/trunk</developerConnection>
-    <url>https://repository.silverpeas.org/svn/silverpeas/parent/trunk/</url>
+    <connection>scm:svn:https://repository.silverpeas.org/svn/silverpeas/parent/tags/parent-7.0</connection>
+    <developerConnection>scm:svn:https://repository.silverpeas.org/svn/silverpeas/parent/tags/parent-7.0</developerConnection>
+    <url>https://repository.silverpeas.org/svn/silverpeas/parent/tags/parent-7.0</url>
   </scm>
 
   <developers>
