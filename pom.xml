@@ -697,7 +697,7 @@
         <version>2.5</version>
       </dependency>
       <dependency>
-        <groupId>pdfbox</groupId>
+        <groupId>org.apache.pdfbox</groupId>
         <artifactId>pdfbox</artifactId>
         <version>1.1.0</version>
         <exclusions>
