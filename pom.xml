@@ -701,6 +701,11 @@
         <version>2.5</version>
       </dependency>
       <dependency>
+        <groupId>pdfbox</groupId>
+        <artifactId>pdfbox</artifactId>
+        <version>0.7.3</version>
+      </dependency>
+      <dependency>
         <groupId>org.apache.pdfbox</groupId>
         <artifactId>pdfbox</artifactId>
         <version>1.1.0</version>
