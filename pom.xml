@@ -468,6 +468,10 @@
             <groupId>poi</groupId>
             <artifactId>poi</artifactId>
           </exclusion>
+          <exclusion>
+            <groupId>pdfbox</groupId>
+            <artifactId>pdfbox</artifactId>
+          </exclusion>
         </exclusions>
       </dependency>
       <dependency>
