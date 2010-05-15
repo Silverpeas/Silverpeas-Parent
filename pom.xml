@@ -1063,7 +1063,7 @@
         <plugin>
           <groupId>com.mycila.maven-license-plugin</groupId>
           <artifactId>maven-license-plugin</artifactId>
-          <version>1.5.0</version>
+          <version>1.6.0</version>
         </plugin>
         <plugin>
           <groupId>org.silverpeas.services</groupId>
@@ -1105,13 +1105,16 @@
               <header>license/silverpeas-license.txt</header>
               <quiet>true</quiet>
               <excludes>
+                <exclude>**/*.properties</exclude>
                 <exclude>**/*.txt</exclude>
                 <exclude>**/*.sql</exclude>
+                <exclude>**/*.inc</exclude>
                 <exclude>**/*.js</exclude>
                 <exclude>**/*.html</exclude>
                 <exclude>**/fckeditor/**/*.*</exclude>
                 <exclude>**/com/sun/**/*.java</exclude>
               </excludes>
+              <encoding>UTF-8</encoding>
             </configuration>
             <executions>
               <execution>
