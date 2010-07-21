@@ -30,25 +30,25 @@
       <id>silverpeas</id>
       <name>Repository Silverpeas</name>
       <layout>default</layout>
-      <url>http://repository.silverpeas.org/nexus/content/repositories/releases/</url>
+      <url>http://www.silverpeas.org/nexus/content/repositories/releases/</url>
     </repository>
     <snapshotRepository>
       <id>silverpeas-snapshots</id>
       <name>Snapshots Repository Silverpeas</name>
       <layout>default</layout>
-      <url>http://repository.silverpeas.org/nexus/content/repositories/snapshots/</url>
+      <url>http://www.silverpeas.org/nexus/content/repositories/snapshots/</url>
     </snapshotRepository>
     <site>
       <id>silverpeas_repository</id>
-      <url>scp://repository.silverpeas.org/var/www/docs</url>
+      <url>scp://www.silverpeas.org/var/www/docs</url>
     </site>
   </distributionManagement>
 
 
   <scm>
-    <connection>scm:svn:https://repository.silverpeas.org/svn/silverpeas/parent/trunk</connection>
-    <developerConnection>scm:svn:https://repository.silverpeas.org/svn/silverpeas/parent/trunk</developerConnection>
-    <url>https://repository.silverpeas.org/svn/silverpeas/parent/trunk/</url>
+    <connection>scm:svn:https://www.silverpeas.org/svn/silverpeas/parent/trunk</connection>
+    <developerConnection>scm:svn:https://www.silverpeas.org/svn/silverpeas/parent/trunk</developerConnection>
+    <url>https://www.silverpeas.org/svn/silverpeas/parent/trunk/</url>
   </scm>
 
   <developers>
@@ -165,7 +165,7 @@
       <id>Silverpeas</id>
       <layout>default</layout>
       <name>Silverpeas Repository</name>
-      <url>http://repository.silverpeas.org/nexus/content/groups/silverpeas</url>
+      <url>http://www.silverpeas.org/nexus/content/groups/silverpeas</url>
       <releases>
         <enabled>true</enabled>
       </releases>
@@ -186,7 +186,7 @@
       <dependency>
         <groupId>junit</groupId>
         <artifactId>junit</artifactId>
-        <version>4.7</version>
+        <version>4.8.1</version>
         <scope>test</scope>
       </dependency>
       <dependency>
@@ -685,11 +685,11 @@
         <artifactId>lucene-analyzers</artifactId>
         <version>${lucene.version}</version>
       </dependency>
-	  <dependency>
-		<groupId>org.apache.lucene</groupId>
-		<artifactId>lucene-spellchecker</artifactId>
-		<version>${lucene.version}</version>
-	  </dependency>
+      <dependency>
+        <groupId>org.apache.lucene</groupId>
+        <artifactId>lucene-spellchecker</artifactId>
+        <version>${lucene.version}</version>
+      </dependency>
       <dependency>
         <groupId>org.jdom</groupId>
         <artifactId>jdom</artifactId>
@@ -826,6 +826,11 @@
         <version>2.4.0-beta-1</version>
       </dependency>
       <dependency>
+        <groupId>org.apache.sanselan</groupId>
+        <artifactId>sanselan</artifactId>
+        <version>0.97-incubator</version>
+      </dependency>
+      <dependency>
         <groupId>org.textmining</groupId>
         <artifactId>tm-extractors</artifactId>
         <version>0.4</version>
@@ -936,11 +941,11 @@
         <artifactId>icu4j</artifactId>
         <version>4.4</version>
       </dependency>
-	  <dependency>
-		<groupId>org.antlr</groupId>
-		<artifactId>stringtemplate</artifactId>
-		<version>3.2.1</version>
-	  </dependency>
+      <dependency>
+        <groupId>org.antlr</groupId>
+        <artifactId>stringtemplate</artifactId>
+        <version>3.2.1</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
