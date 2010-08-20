@@ -53,6 +53,16 @@
 
   <developers>
     <developer>
+      <id>mmoquillon</id>
+      <name>Miguel Moquillon</name>
+      <roles>
+        <role>Developper</role>
+        <role>Architect</role>
+      </roles>
+      <organization>Silverpeas.com</organization>
+      <organizationUrl>http://www.silverpeas.com</organizationUrl>
+    </developer>
+    <developer>
       <id>ehugonnet</id>
       <name>Emmanuel Hugonnet</name>
       <roles>
