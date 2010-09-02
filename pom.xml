@@ -37,7 +37,7 @@
     <name>Silverpeas</name>
     <url>http://www.silverpeas.com</url>
   </organization>
-  <url>http://www.silverpeas.org</url>
+  <url>http://www.silverpeas.com</url>
   <ciManagement>
     <system>Hudson</system>
     <url>http://integration.silverpeas.org/hudson</url>
@@ -270,7 +270,21 @@
       <dependency>
         <groupId>com.mockrunner</groupId>
         <artifactId>mockrunner-jms</artifactId>
-        <version>0.4.1</version>
+        <version>${mockrunner.version}</version>
+        <classifier>jdk1.6-j2ee1.4</classifier>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.mockrunner</groupId>
+        <artifactId>mockrunner</artifactId>
+        <version>${mockrunner.version}</version>
+        <classifier>jdk1.6-j2ee1.4</classifier>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.mockrunner</groupId>
+        <artifactId>mockrunner-jdbc</artifactId>
+        <version>${mockrunner.version}</version>
         <classifier>jdk1.6-j2ee1.4</classifier>
         <scope>test</scope>
       </dependency>
@@ -1192,6 +1206,7 @@
   </profiles>
 
   <properties>
+    <mockrunner.version>0.4.2</mockrunner.version>
     <wagon.version>1.0-beta-6</wagon.version>
     <config.version>2.0</config.version>
     <slf4j.version>1.5.6</slf4j.version>
