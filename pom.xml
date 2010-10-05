@@ -140,16 +140,6 @@
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
     </developer>
     <developer>
-      <id>jlecomte</id>
-      <name>Jocelyn Lecomte</name>
-      <roles>
-        <role>Developper</role>
-        <role>Project Manager</role>
-      </roles>
-      <organization>Silverpeas</organization>
-      <organizationUrl>http://www.silverpeas.com</organizationUrl>
-    </developer>
-    <developer>
       <id>lbertin</id>
       <name>Ludovic Bertin</name>
       <roles>
@@ -186,11 +176,20 @@
         <role>CTO</role>
         <role>Project Manager</role>
       </roles>
-      <organization>Oevo</organization>
-      <organizationUrl>http://www.oevo.com</organizationUrl>
+      <organization>Silverpeas</organization>
+      <organizationUrl>http://www.silverpeas.com</organizationUrl>
+    </developer>
+    <developer>
+      <id>svuillet</id>
+      <name>Sébastien Vuillet</name>
+      <roles>
+        <role>CTO</role>
+        <role>Project Manager</role>
+      </roles>
+      <organization>Silverpeas</organization>
+      <organizationUrl>http://www.silverpeas.com</organizationUrl>
     </developer>
   </developers>
-
   <issueManagement>
     <system>Redmine</system>
     <url>https://www.silverpeas.org/redmine/</url>
@@ -236,6 +235,11 @@
         <artifactId>dbunit</artifactId>
         <version>2.2.2</version>
         <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.h2database</groupId>
+        <artifactId>h2</artifactId>
+        <version>1.2.143</version>
       </dependency>
       <dependency>
         <groupId>org.jvnet.mock-javamail</groupId>
