@@ -215,7 +215,7 @@
       <url>http://no-commons-logging.zapto.org/mvn2</url>
     </repository>
   </repositories>
-  
+
   <pluginRepositories>
     <pluginRepository>
       <id>Silverpeas</id>
@@ -697,14 +697,23 @@
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
-        <artifactId>spring</artifactId>
+        <artifactId>spring-core</artifactId>
         <version>${spring.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>aparzev</groupId>
-            <artifactId>commons</artifactId>
-          </exclusion>
-        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-beans</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>${spring.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-orm</artifactId>
+        <version>${spring.version}</version>
       </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
@@ -721,7 +730,6 @@
         <groupId>org.springframework</groupId>
         <artifactId>spring-webmvc</artifactId>
         <version>${spring.version}</version>
-        <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>org.aspectj</groupId>
@@ -1271,7 +1279,7 @@
     <slf4j.version>1.5.6</slf4j.version>
     <lucene.version>2.4.1</lucene.version>
     <poi.version>3.2-FINAL</poi.version>
-    <spring.version>2.5.6.SEC01</spring.version>
+    <spring.version>3.0.5.RELEASE</spring.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
