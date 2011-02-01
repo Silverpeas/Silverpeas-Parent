@@ -728,7 +728,7 @@
         <artifactId>spring-context</artifactId>
         <version>${spring.version}</version>
       </dependency>
-      
+
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-orm</artifactId>
@@ -761,6 +761,11 @@
         <version>1.0</version>
       </dependency>
       <dependency>
+        <groupId>javax.validation</groupId>
+        <artifactId>validation-api</artifactId>
+        <version>1.0.0.GA</version>
+      </dependency>
+      <dependency>
         <groupId>org.aspectj</groupId>
         <artifactId>aspectjrt</artifactId>
         <version>1.6.1</version>
@@ -774,6 +779,11 @@
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate</artifactId>
         <version>3.2.6.ga</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hibernate</groupId>
+        <artifactId>hibernate-validator</artifactId>
+        <version>4.0.2.GA</version>
       </dependency>
       <dependency>
         <groupId>net.sf.ehcache</groupId>
