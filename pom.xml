@@ -1402,7 +1402,7 @@
     <lucene.version>2.4.1</lucene.version>
     <poi.version>3.2-FINAL</poi.version>
     <spring.version>3.0.5.RELEASE</spring.version>
-    <powermock.version>1.4.7</powermock.version>
+    <powermock.version>1.4.6</powermock.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
   </properties>
