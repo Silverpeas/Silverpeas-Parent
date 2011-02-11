@@ -298,6 +298,11 @@
         <version>${jersey.version}</version>
       </dependency>
       <dependency>
+        <groupId>com.sun.jersey</groupId>
+        <artifactId>jersey-json</artifactId>
+        <version>${jersey.version}</version>
+      </dependency>
+      <dependency>
         <groupId>com.sun.jersey.contribs</groupId>
         <artifactId>jersey-spring</artifactId>
         <version>${jersey.version}</version>
@@ -1200,11 +1205,11 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
-	<version>2.1</version>
+        <version>2.1</version>
         <configuration>
           <localCheckout>true</localCheckout>
           <pushChanges>false</pushChanges>
-	  <autoVersionSubmodules>true</autoVersionSubmodules>
+          <autoVersionSubmodules>true</autoVersionSubmodules>
           <goals>deploy</goals>
         </configuration>
       </plugin>
