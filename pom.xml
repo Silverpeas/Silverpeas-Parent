@@ -314,6 +314,10 @@
             <artifactId>jettison</artifactId>
             <groupId>org.codehaus.jettison</groupId>
           </exclusion>
+          <exclusion>
+            <groupId>javax.xml.stream</groupId>
+            <artifactId>stax-api</artifactId>
+          </exclusion>
         </exclusions>
       </dependency>
       <dependency>
@@ -719,6 +723,7 @@
         <groupId>javax.validation</groupId>
         <artifactId>validation-api</artifactId>
         <version>1.0.0.GA</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.aspectj</groupId>
@@ -734,6 +739,7 @@
         <groupId>org.hibernate.javax.persistence</groupId>
         <artifactId>hibernate-jpa-2.0-api</artifactId>
         <version>1.0.0.Final</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.synyx.hades</groupId>
@@ -743,19 +749,19 @@
           <exclusion>
             <groupId>org.springframework</groupId>
             <artifactId>org.springframework.aop</artifactId>
-          </exclusion> 
+          </exclusion>
           <exclusion>
             <groupId>org.springframework</groupId>
             <artifactId>org.springframework.asm</artifactId>
-          </exclusion> 
+          </exclusion>
           <exclusion>
             <groupId>org.springframework</groupId>
             <artifactId>org.springframework.beans</artifactId>
-          </exclusion> 
+          </exclusion>
           <exclusion>
             <groupId>org.springframework</groupId>
             <artifactId>org.springframework.context</artifactId>
-          </exclusion> 
+          </exclusion>
           <exclusion>
             <groupId>org.springframework</groupId>
             <artifactId>org.springframework.core</artifactId>
@@ -763,35 +769,50 @@
           <exclusion>
             <groupId>org.springframework</groupId>
             <artifactId>org.springframework.expression</artifactId>
-          </exclusion> 
+          </exclusion>
           <exclusion>
             <groupId>org.springframework</groupId>
             <artifactId>org.springframework.jdbc</artifactId>
-          </exclusion> 
+          </exclusion>
           <exclusion>
             <groupId>org.springframework</groupId>
             <artifactId>org.springframework.orm</artifactId>
-          </exclusion> 
+          </exclusion>
           <exclusion>
             <groupId>org.springframework</groupId>
             <artifactId>org.springframework.transaction</artifactId>
-          </exclusion> 
+          </exclusion>
         </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>javax.transaction</groupId>
+        <artifactId>jta</artifactId>
+        <version>1.1</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-entitymanager</artifactId>
         <version>3.6.1.Final</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-core</artifactId>
         <version>3.6.1.Final</version>
+        <scope>provided</scope>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.transaction</groupId>
+            <artifactId>jta</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.hibernate</groupId>
         <artifactId>hibernate-validator</artifactId>
         <version>4.1.0.Final</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>net.sf.ehcache</groupId>
@@ -1012,6 +1033,11 @@
         </exclusions>
       </dependency>
       <dependency>
+        <groupId>net.sf.jtidy</groupId>
+        <artifactId>jtidy</artifactId>
+        <version>r938</version>
+      </dependency>
+      <dependency>
         <groupId>jcharts</groupId>
         <artifactId>jcharts</artifactId>
         <version>0.7.5</version>
@@ -1123,11 +1149,6 @@
         <groupId>oro</groupId>
         <artifactId>oro</artifactId>
         <version>2.0.8</version>
-      </dependency>
-      <dependency>
-        <groupId>jtidy</groupId>
-        <artifactId>jtidy</artifactId>
-        <version>4aug2000r7-dev</version>
       </dependency>
       <dependency>
         <groupId>com.thoughtworks.xstream</groupId>
