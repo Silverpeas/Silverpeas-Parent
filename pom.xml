@@ -377,12 +377,6 @@
         <version>1.1</version>
         <scope>provided</scope>
       </dependency>
-<!--      <dependency>
-        <groupId>org.apache.geronimo.specs</groupId>
-        <artifactId>geronimo-j2ee_1.4_spec</artifactId>
-        <version>1.1</version>
-        <scope>provided</scope>
-      </dependency>-->
       <dependency>
         <groupId>javax.servlet</groupId>
         <artifactId>jstl</artifactId>
@@ -1198,6 +1192,16 @@
         <groupId>org.quartz-scheduler</groupId>
         <artifactId>quartz</artifactId>
         <version>1.8.4</version>
+      </dependency>
+      <dependency>
+        <groupId>org.odftoolkit</groupId>
+        <artifactId>simple-odf</artifactId>
+        <version>0.5.5</version>
+      </dependency>
+      <dependency>
+        <groupId>com.artofsolving</groupId>
+        <artifactId>jodconverter</artifactId>
+        <version>2.2.1</version>
       </dependency>
 
       <!--
