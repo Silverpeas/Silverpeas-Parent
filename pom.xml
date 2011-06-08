@@ -476,7 +476,7 @@
       <dependency>
         <groupId>commons-dbcp</groupId>
         <artifactId>commons-dbcp</artifactId>
-        <version>1.2.2</version>
+        <version>1.4</version>
       </dependency>
       <dependency>
         <groupId>commons-digester</groupId>
@@ -1589,5 +1589,6 @@
     <powermock.version>1.4.6</powermock.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+    <netbeans.hint.license>agpl30</netbeans.hint.license>
   </properties>
 </project>
