@@ -37,10 +37,10 @@
     <name>Silverpeas</name>
     <url>http://www.silverpeas.com</url>
   </organization>
-  <url>http://www.silverpeas.com</url>
+  <url>http://www.silverpeas.org</url>
   <ciManagement>
     <system>Hudson</system>
-    <url>http://integration.silverpeas.org/hudson</url>
+    <url>http://integration.silverpeas.org/jenkins</url>
   </ciManagement>
 
   <licenses>
