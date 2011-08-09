@@ -349,8 +349,24 @@
         <version>${jersey.version}</version>
         <exclusions>
           <exclusion>
-            <artifactId>jersey-grizzly2</artifactId>
-            <groupId>com.sun.jersey</groupId>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-beans</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -1244,7 +1260,7 @@
       </dependency>
       <dependency>
         <groupId>com.sun.jersey.jersey-test-framework</groupId>
-        <artifactId>jersey-test-framework-grizzly</artifactId>
+        <artifactId>jersey-test-framework-grizzly2</artifactId>
         <version>${jersey.version}</version>
         <scope>test</scope>
       </dependency>
@@ -1619,7 +1635,7 @@
 
   <properties>
     <bouncycastle.version>1.45</bouncycastle.version>
-    <jersey.version>1.6</jersey.version>
+    <jersey.version>1.8</jersey.version>
     <jackson.version>1.7.4</jackson.version>
     <jackrabbit.version>1.6.4</jackrabbit.version>
     <mockrunner.version>0.4.2</mockrunner.version>
