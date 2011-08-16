@@ -742,7 +742,8 @@
       <dependency>
         <groupId>log4j</groupId>
         <artifactId>log4j</artifactId>
-        <version>1.2.15</version>
+        <version>1.2.16</version>
+        <!--
         <exclusions>
           <exclusion>
             <groupId>javax.jms</groupId>
@@ -757,6 +758,7 @@
             <artifactId>jmxri</artifactId>
           </exclusion>
         </exclusions>
+        -->
       </dependency>
       <dependency>
         <groupId>javax.enterprise</groupId>
@@ -1131,6 +1133,7 @@
         <groupId>javax.mail</groupId>
         <artifactId>mail</artifactId>
         <version>1.4.3</version>
+        <scope>provided</scope>
       </dependency>      
       <dependency>
         <groupId>com.ecyrd.jspwiki</groupId>
