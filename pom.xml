@@ -38,11 +38,23 @@
     <url>http://www.silverpeas.com</url>
   </organization>
   <url>http://www.silverpeas.org</url>
+  
   <ciManagement>
     <system>Hudson</system>
     <url>http://integration.silverpeas.org/jenkins</url>
   </ciManagement>
-
+  
+  <mailingLists>
+    <mailingList>
+      <name>Silverpeas Users List</name>
+      <archive>http://groups.google.com/group/silverpeas-users</archive>      
+    </mailingList> 
+    <mailingList>
+      <name>Silverpeas Development List</name>
+      <archive>http://groups.google.com/group/silverpeas-dev</archive>      
+    </mailingList> 
+  </mailingLists>
+  
   <licenses>
     <license>
       <name>GNU Affero General Public License with FLOSS Exception</name>
