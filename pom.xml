@@ -472,7 +472,7 @@
       <dependency>
         <groupId>xerces</groupId>
         <artifactId>xercesImpl</artifactId>
-        <version>2.6.2</version>
+        <version>2.10.0</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
@@ -1652,7 +1652,7 @@
     <config.version>2.1-SNAPSHOT</config.version>
     <slf4j.version>1.5.6</slf4j.version>
     <lucene.version>2.4.1</lucene.version>
-    <poi.version>3.2-FINAL</poi.version>
+    <poi.version>3.7</poi.version>
     <spring.version>3.0.5.RELEASE</spring.version>
     <powermock.version>1.4.6</powermock.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
