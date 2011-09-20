@@ -1156,7 +1156,7 @@
       <dependency>
         <groupId>net.fortuna.ical4j</groupId>
         <artifactId>ical4j</artifactId>
-        <version>1.0</version>
+        <version>1.0.1</version>
       </dependency>
       <dependency>
         <groupId>javax.portlet</groupId>
