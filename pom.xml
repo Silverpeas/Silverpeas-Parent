@@ -1761,7 +1761,7 @@
     <poi.version>3.7</poi.version>
     <spring.version>3.0.5.RELEASE</spring.version>
     <powermock.version>1.4.10</powermock.version>
-    <hibernate.version>3.6.1.Final</hibernate.version>
+    <hibernate.version>3.6.6.Final</hibernate.version>
     <tika.version>0.9</tika.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
