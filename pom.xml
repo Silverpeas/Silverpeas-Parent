@@ -200,6 +200,26 @@
       <organization>Silverpeas</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
     </developer>
+    <developer>
+      <id>ebonnet</id>
+      <name>Etienne Bonnet</name>
+      <roles>
+        <role>Developper</role>
+        <role>Project Manager</role>
+      </roles>
+      <organization>Silverpeas.com</organization>
+      <organizationUrl>http://www.silverpeas.com</organizationUrl>
+    </developer>
+    <developer>
+      <id>aallibe</id>
+      <name>Aurore Allibe</name>
+      <roles>
+        <role>Web Designer</role>
+        <role>Project Manager</role>
+      </roles>
+      <organization>Silverpeas.com</organization>
+      <organizationUrl>http://www.silverpeas.com</organizationUrl>
+    </developer>
   </developers>
   <issueManagement>
     <system>Redmine</system>
