@@ -1344,7 +1344,7 @@
       <dependency>
         <groupId>org.odftoolkit</groupId>
         <artifactId>simple-odf</artifactId>
-        <version>0.6</version>
+        <version>0.6.6</version>
       </dependency>
       <dependency>
         <groupId>com.artofsolving</groupId>
@@ -1444,6 +1444,12 @@
             <artifactId>mockito-all</artifactId>
           </exclusion>
         </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.powermock</groupId>
+        <artifactId>powermock-classloading-xstream</artifactId>
+        <scope>test</scope>
+        <version>1.4.11</version>
       </dependency>
       <dependency>
         <groupId>com.jayway.awaitility</groupId>
