@@ -254,7 +254,7 @@
         <enabled>true</enabled>
       </snapshots>
     </pluginRepository>
-   <!-- <pluginRepository>
+    <!-- <pluginRepository>
       <id>apache.snapshots</id>
       <url>http://repository.apache.org/snapshots/</url>
       <snapshots>
@@ -766,6 +766,10 @@
           <exclusion>
             <groupId>org.apache.jackrabbit</groupId>
             <artifactId>jackrabbit-jca</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.apache.jackrabbit</groupId>
+            <artifactId>jackrabbit-jcr-rmi</artifactId>
           </exclusion>
           <exclusion>
             <groupId>aparzev</groupId>
@@ -1548,6 +1552,11 @@
         <artifactId>hamcrest-all</artifactId>
         <version>1.2</version>
         <scope>test</scope>
+      </dependency> 
+      <dependency>
+        <groupId>org.codehaus.groovy</groupId>
+        <artifactId>groovy-all</artifactId>
+        <version>1.8.5</version> 
       </dependency>
     </dependencies>
   </dependencyManagement>
