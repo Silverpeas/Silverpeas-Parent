@@ -31,7 +31,7 @@
   <packaging>pom</packaging>
   <artifactId>parent</artifactId>
   <groupId>com.silverpeas</groupId>
-  <version>22-SNAPSHOT</version>
+  <version>22</version>
   <name>parent</name>
   <organization>
     <name>Silverpeas</name>
