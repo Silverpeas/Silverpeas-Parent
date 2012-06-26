@@ -1578,7 +1578,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-release-plugin</artifactId>
-        <version>2.1</version>
+        <version>2.2.2</version>
         <configuration>
           <localCheckout>true</localCheckout>
           <pushChanges>false</pushChanges>
@@ -1588,6 +1588,7 @@
       </plugin>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
+        <version>2.5.1</version>
         <configuration>
           <source>1.6</source>
           <target>1.6</target>
@@ -1597,12 +1598,14 @@
       </plugin>
       <plugin>
         <artifactId>maven-resources-plugin</artifactId>
+        <version>2.5</version>
         <configuration>
           <encoding>UTF-8</encoding>
         </configuration>
       </plugin>
       <plugin>
         <artifactId>maven-dependency-plugin</artifactId>
+        <version>2.4</version>
       </plugin>
       <plugin>
         <artifactId>maven-ejb-plugin</artifactId>
