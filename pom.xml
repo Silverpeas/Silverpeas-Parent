@@ -484,6 +484,7 @@
         <groupId>taglibs</groupId>
         <artifactId>standard</artifactId>
         <version>1.1.2</version>
+        <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.apache.poi</groupId>
@@ -1835,5 +1836,6 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <netbeans.hint.license>agpl30</netbeans.hint.license>
+    <gpg.passphrase>thephrase</gpg.passphrase>
   </properties>
 </project>
