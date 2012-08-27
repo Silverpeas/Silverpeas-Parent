@@ -1374,6 +1374,28 @@
         <artifactId>jersey-test-framework-grizzly2</artifactId>
         <version>${jersey.version}</version>
         <scope>test</scope>
+        <exclusions>
+          <exclusion>
+            <groupId>org.glassfish.grizzly</groupId>
+            <artifactId>grizzly-http</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.glassfish.grizzly</groupId>
+            <artifactId>grizzly-http-servlet</artifactId>
+          </exclusion>
+        </exclusions>
+      </dependency>
+      <dependency>
+        <groupId>org.glassfish.grizzly</groupId>
+        <artifactId>grizzly-http</artifactId>
+        <version>${grizzly2.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.glassfish.grizzly</groupId>
+        <artifactId>grizzly-http-servlet</artifactId>
+        <version>${grizzly2.version}</version>
+        <scope>test</scope>
       </dependency>
       <dependency>
         <groupId>com.sun.jersey.contribs</groupId>
@@ -1821,6 +1843,7 @@
     <aspectj.version>1.6.12</aspectj.version>
     <bouncycastle.version>1.46</bouncycastle.version>
     <jersey.version>1.13</jersey.version>
+    <grizzly2.version>2.2.16</grizzly2.version>
     <jackson.version>1.9.7</jackson.version>
     <jackrabbit.version>2.2.11</jackrabbit.version>
     <mockrunner.version>0.4.2</mockrunner.version>
