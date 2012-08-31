@@ -1019,11 +1019,12 @@
         <artifactId>lucene-spellchecker</artifactId>
         <version>${lucene.version}</version>
       </dependency>
+      <!--
       <dependency>
         <groupId>org.apache.lucene</groupId>
         <artifactId>lucene-snowball</artifactId>
         <version>${lucene.version}</version>
-      </dependency>
+      </dependency>-->
       <dependency>
         <groupId>org.jdom</groupId>
         <artifactId>jdom</artifactId>
@@ -1845,12 +1846,12 @@
     <jersey.version>1.13</jersey.version>
     <grizzly2.version>2.2.16</grizzly2.version>
     <jackson.version>1.9.7</jackson.version>
-    <jackrabbit.version>2.2.11</jackrabbit.version>
+    <jackrabbit.version>2.5.1</jackrabbit.version>
     <mockrunner.version>0.4.2</mockrunner.version>
     <wagon.version>2.0</wagon.version>
     <config.version>2.1-SNAPSHOT</config.version>
     <slf4j.version>1.5.6</slf4j.version>
-    <lucene.version>2.4.1</lucene.version>
+    <lucene.version>3.6.1</lucene.version>
     <poi.version>3.8</poi.version>
     <spring.version>3.1.2.RELEASE</spring.version>
     <powermock.version>1.4.12</powermock.version>
