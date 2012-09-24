@@ -1329,6 +1329,14 @@
             <groupId>xerces</groupId>
             <artifactId>xmlParserAPIs</artifactId>
           </exclusion>
+          <exclusion>
+            <groupId>maven-plugins</groupId>
+            <artifactId>maven-cobertura-plugin</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>maven-plugins</groupId>
+            <artifactId>maven-findbugs-plugin</artifactId>
+          </exclusion>
         </exclusions>
       </dependency>
       <dependency>
