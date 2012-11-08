@@ -99,6 +99,7 @@
       </roles>
       <organization>Silverpeas.com</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
+      <email>miguel.moquillon@silverpeas.org</email>
     </developer>
     <developer>
       <id>ehugonnet</id>
@@ -109,6 +110,7 @@
       </roles>
       <organization>Silverpeas.com</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
+      <email>emmanuel.hugonnet@silverpeas.org</email>
     </developer>
     <developer>
       <id>cbonin</id>
@@ -1949,7 +1951,7 @@
     <spring.version>3.1.2.RELEASE</spring.version>
     <powermock.version>1.4.12</powermock.version>
     <hibernate.version>3.6.10.Final</hibernate.version>
-    <tika.version>1.1</tika.version>
+    <tika.version>1.2</tika.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <netbeans.hint.license>agpl30</netbeans.hint.license>
