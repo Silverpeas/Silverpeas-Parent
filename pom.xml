@@ -99,6 +99,7 @@
       </roles>
       <organization>Silverpeas.com</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
+	  <email>miguel.moquillon@silverpeas.org</email>
     </developer>
     <developer>
       <id>ehugonnet</id>
@@ -109,6 +110,7 @@
       </roles>
       <organization>Silverpeas.com</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
+	  <email>emmanuel.hugonnet@silverpeas.org</email>
     </developer>
     <developer>
       <id>cbonin</id>
@@ -140,6 +142,7 @@
       </roles>
       <organization>Silverpeas.com</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
+	  <email>nicolas.eysseric@silverpeas.org</email>
     </developer>
     <developer>
       <id>sfariello</id>
@@ -172,26 +175,6 @@
       <organizationUrl>http://www.oosphere.ch</organizationUrl>
     </developer>
     <developer>
-      <id>cgrand</id>
-      <name>Céline Grand</name>
-      <roles>
-        <role>Developper</role>
-        <role>Project Manager</role>
-      </roles>
-      <organization>Oosphere</organization>
-      <organizationUrl>http://www.oosphere.ch</organizationUrl>
-    </developer>
-    <developer>
-      <id>pbazart</id>
-      <name>Philippe Bazart</name>
-      <roles>
-        <role>CTO</role>
-        <role>Project Manager</role>
-      </roles>
-      <organization>Silverpeas</organization>
-      <organizationUrl>http://www.silverpeas.com</organizationUrl>
-    </developer>
-    <developer>
       <id>svuillet</id>
       <name>Sébastien Vuillet</name>
       <roles>
@@ -220,6 +203,17 @@
       </roles>
       <organization>Silverpeas.com</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
+    </developer>
+	<developer>
+      <id>ychastagnier</id>
+      <name>Yohann Chastagnier</name>
+      <roles>
+        <role>Developper</role>
+        <role>Architect</role>
+      </roles>
+      <organization>Silverpeas.com</organization>
+      <organizationUrl>http://www.silverpeas.com</organizationUrl>
+	  <email>yohann.chastagnier@silverpeas.org</email>
     </developer>
   </developers>
   <issueManagement>
@@ -1949,7 +1943,7 @@
     <spring.version>3.1.2.RELEASE</spring.version>
     <powermock.version>1.4.12</powermock.version>
     <hibernate.version>3.6.10.Final</hibernate.version>
-    <tika.version>1.1</tika.version>
+    <tika.version>1.2</tika.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <netbeans.hint.license>agpl30</netbeans.hint.license>
