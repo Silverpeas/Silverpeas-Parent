@@ -99,7 +99,7 @@
       </roles>
       <organization>Silverpeas.com</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
-	  <email>miguel.moquillon@silverpeas.org</email>
+      <email>miguel.moquillon@silverpeas.org</email>
     </developer>
     <developer>
       <id>ehugonnet</id>
@@ -110,7 +110,7 @@
       </roles>
       <organization>Silverpeas.com</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
-	  <email>emmanuel.hugonnet@silverpeas.org</email>
+      <email>emmanuel.hugonnet@silverpeas.org</email>
     </developer>
     <developer>
       <id>cbonin</id>
