@@ -1663,6 +1663,7 @@
           <localCheckout>true</localCheckout>
           <pushChanges>false</pushChanges>
           <autoVersionSubmodules>true</autoVersionSubmodules>
+          <allowTimestampedSnapshots>true</allowTimestampedSnapshots>
           <goals>deploy</goals>
         </configuration>
       </plugin>
