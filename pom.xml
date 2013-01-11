@@ -1139,7 +1139,7 @@
       <dependency>
         <groupId>postgresql</groupId>
         <artifactId>postgresql</artifactId>
-        <version>9.1-902.jdbc4</version>
+        <version>9.2-1002.jdbc4</version>
       </dependency>
       <dependency>
         <groupId>net.sourceforge.jtds</groupId>
@@ -1968,7 +1968,7 @@
     <jersey.version>1.14</jersey.version>
     <grizzly2.version>2.2.16</grizzly2.version>
     <jackson.version>1.9.10</jackson.version>
-    <jackrabbit.version>2.5.1</jackrabbit.version>
+    <jackrabbit.version>2.5.2</jackrabbit.version>
     <mockrunner.version>0.4.2</mockrunner.version>
     <wagon.version>2.0</wagon.version>
     <config.version>2.1</config.version>
