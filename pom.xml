@@ -88,7 +88,6 @@
     <url>http://gitub.com/Silverpeas/Silverpeas-Parent.git</url>
     <tag>HEAD</tag>
   </scm>
-
   <developers>
     <developer>
       <id>mmoquillon</id>
@@ -123,16 +122,6 @@
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
     </developer>
     <developer>
-      <id>dlesimple</id>
-      <name>David Lesimple</name>
-      <roles>
-        <role>Developper</role>
-        <role>Project Manager</role>
-      </roles>
-      <organization>Silverpeas.com</organization>
-      <organizationUrl>http://www.silverpeas.com</organizationUrl>
-    </developer>
-    <developer>
       <id>neysseric</id>
       <name>Nicolas Eysseric</name>
       <roles>
@@ -143,30 +132,10 @@
       <organization>Silverpeas.com</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
       <email>nicolas.eysseric@silverpeas.org</email>
-    </developer>
-    <developer>
-      <id>sfariello</id>
-      <name>Stéphanie Fariello</name>
-      <roles>
-        <role>Developper</role>
-        <role>Project Manager</role>
-      </roles>
-      <organization>Silverpeas.com</organization>
-      <organizationUrl>http://www.silverpeas.com</organizationUrl>
-    </developer>
+    </developer>    
     <developer>
       <id>lbertin</id>
       <name>Ludovic Bertin</name>
-      <roles>
-        <role>Architect</role>
-        <role>Project Manager</role>
-      </roles>
-      <organization>Oosphere</organization>
-      <organizationUrl>http://www.oosphere.ch</organizationUrl>
-    </developer>
-    <developer>
-      <id>ahedin</id>
-      <name>Antoine Hedin</name>
       <roles>
         <role>Architect</role>
         <role>Project Manager</role>
@@ -216,6 +185,33 @@
       <email>yohann.chastagnier@silverpeas.org</email>
     </developer>
   </developers>
+  
+  <contributors>
+    <contributor>
+      <name>Umar Raad</name>
+      <roles>
+        <role>German translator</role>
+      </roles>
+    </contributor>    
+    <contributor>
+      <name>David Lesimple</name>
+      <roles>
+        <role>Support</role>
+        <role>Project Manager</role>
+      </roles>
+      <organization>Silverpeas.com</organization>
+      <organizationUrl>http://www.silverpeas.com</organizationUrl>
+    </contributor>
+    <contributor>
+      <name>Stéphanie Fariello</name>
+      <roles>
+        <role>Support</role>
+        <role>Project Manager</role>
+      </roles>
+      <organization>Silverpeas.com</organization>
+      <organizationUrl>http://www.silverpeas.com</organizationUrl>
+    </contributor>
+  </contributors>
   <issueManagement>
     <system>Redmine</system>
     <url>https://www.silverpeas.org/redmine/</url>
@@ -968,6 +964,16 @@
         <groupId>org.springframework.data</groupId>
         <artifactId>spring-data-jpa</artifactId>
         <version>1.1.2.RELEASE</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aop</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>javax.transaction</groupId>
@@ -1651,17 +1657,17 @@
         <scope>test</scope>
       </dependency>
       <dependency>
-      <groupId>org.netbeans.api</groupId>
-      <artifactId>org-openide-util</artifactId>
-      <version>${netbeans.version}</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.netbeans.api</groupId>
-      <artifactId>org-openide-filesystems</artifactId>
-      <version>${netbeans.version}</version>
-      <scope>test</scope>
-    </dependency>
+        <groupId>org.netbeans.api</groupId>
+        <artifactId>org-openide-util</artifactId>
+        <version>${netbeans.version}</version>
+        <scope>test</scope>
+      </dependency>
+      <dependency>
+        <groupId>org.netbeans.api</groupId>
+        <artifactId>org-openide-filesystems</artifactId>
+        <version>${netbeans.version}</version>
+        <scope>test</scope>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
@@ -1975,7 +1981,7 @@
     <slf4j.version>1.5.6</slf4j.version>
     <lucene.version>3.6.1</lucene.version>
     <poi.version>3.8</poi.version>
-    <spring.version>3.1.2.RELEASE</spring.version>
+    <spring.version>3.1.3.RELEASE</spring.version>
     <powermock.version>1.4.12</powermock.version>
     <hibernate.version>3.6.10.Final</hibernate.version>
     <tika.version>1.2</tika.version>
