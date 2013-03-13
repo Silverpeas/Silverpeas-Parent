@@ -93,10 +93,10 @@
       <id>mmoquillon</id>
       <name>Miguel Moquillon</name>
       <roles>
-        <role>Developper</role>
         <role>Architect</role>
+        <role>Developper</role>
       </roles>
-      <organization>Silverpeas.com</organization>
+      <organization>Silverpeas</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
       <email>miguel.moquillon@silverpeas.org</email>
     </developer>
@@ -104,10 +104,10 @@
       <id>ehugonnet</id>
       <name>Emmanuel Hugonnet</name>
       <roles>
-        <role>Developper</role>
         <role>Architect</role>
+        <role>Developper</role>
       </roles>
-      <organization>Silverpeas.com</organization>
+      <organization>Silverpeas</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
       <email>emmanuel.hugonnet@silverpeas.org</email>
     </developer>
@@ -115,34 +115,23 @@
       <id>cbonin</id>
       <name>Cécile Bonin</name>
       <roles>
-        <role>Developper</role>
         <role>Project Manager</role>
+        <role>Developper</role>
       </roles>
-      <organization>Silverpeas.com</organization>
+      <organization>Silverpeas</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
     </developer>
     <developer>
       <id>neysseric</id>
       <name>Nicolas Eysseric</name>
       <roles>
+        <role>Product Manager</role>
         <role>Developper</role>
-        <role>Project Manager</role>
-        <role>CTO</role>
       </roles>
-      <organization>Silverpeas.com</organization>
+      <organization>Silverpeas</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
       <email>nicolas.eysseric@silverpeas.org</email>
     </developer>    
-    <developer>
-      <id>lbertin</id>
-      <name>Ludovic Bertin</name>
-      <roles>
-        <role>Architect</role>
-        <role>Project Manager</role>
-      </roles>
-      <organization>Oosphere</organization>
-      <organizationUrl>http://www.oosphere.ch</organizationUrl>
-    </developer>
     <developer>
       <id>svuillet</id>
       <name>Sébastien Vuillet</name>
@@ -157,8 +146,8 @@
       <id>ebonnet</id>
       <name>Etienne Bonnet</name>
       <roles>
-        <role>Developper</role>
         <role>Project Manager</role>
+        <role>Developper</role>
       </roles>
       <organization>Silverpeas.com</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
@@ -168,7 +157,6 @@
       <name>Aurore Allibe</name>
       <roles>
         <role>Web Designer</role>
-        <role>Project Manager</role>
       </roles>
       <organization>Silverpeas.com</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
@@ -178,7 +166,6 @@
       <name>Yohann Chastagnier</name>
       <roles>
         <role>Developper</role>
-        <role>Architect</role>
       </roles>
       <organization>Silverpeas.com</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
@@ -194,12 +181,31 @@
       </roles>
     </contributor>    
     <contributor>
+      <id>lbertin</id>
+      <name>Ludovic Bertin</name>
+      <roles>
+        <role>Project Manager</role>
+        <role>Developper</role>
+      </roles>
+      <organization>Oosphere</organization>
+      <organizationUrl>http://www.oosphere.ch</organizationUrl>
+    </contributor>
+    <contributor>
+      <id>ndupont</id>
+      <name>Nicolas Dupont</name>
+      <roles>
+        <role>Developper</role>
+      </roles>
+      <organization>Oosphere</organization>
+      <organizationUrl>http://www.oosphere.ch</organizationUrl>
+    </contributor>
+    <contributor>
       <name>David Lesimple</name>
       <roles>
         <role>Support</role>
         <role>Project Manager</role>
       </roles>
-      <organization>Silverpeas.com</organization>
+      <organization>Silverpeas</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
     </contributor>
     <contributor>
@@ -208,7 +214,7 @@
         <role>Support</role>
         <role>Project Manager</role>
       </roles>
-      <organization>Silverpeas.com</organization>
+      <organization>Silverpeas</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
     </contributor>
   </contributors>
