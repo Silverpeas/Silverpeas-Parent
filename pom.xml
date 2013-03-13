@@ -94,7 +94,7 @@
       <name>Miguel Moquillon</name>
       <roles>
         <role>Architect</role>
-        <role>Developper</role>
+        <role>Developer</role>
       </roles>
       <organization>Silverpeas</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
@@ -105,7 +105,7 @@
       <name>Emmanuel Hugonnet</name>
       <roles>
         <role>Architect</role>
-        <role>Developper</role>
+        <role>Developer</role>
       </roles>
       <organization>Silverpeas</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
@@ -116,7 +116,7 @@
       <name>Cécile Bonin</name>
       <roles>
         <role>Project Manager</role>
-        <role>Developper</role>
+        <role>Developer</role>
       </roles>
       <organization>Silverpeas</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
@@ -126,7 +126,7 @@
       <name>Nicolas Eysseric</name>
       <roles>
         <role>Product Manager</role>
-        <role>Developper</role>
+        <role>Developer</role>
       </roles>
       <organization>Silverpeas</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
@@ -147,7 +147,7 @@
       <name>Etienne Bonnet</name>
       <roles>
         <role>Project Manager</role>
-        <role>Developper</role>
+        <role>Developer</role>
       </roles>
       <organization>Silverpeas.com</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
@@ -165,7 +165,7 @@
       <id>ychastagnier</id>
       <name>Yohann Chastagnier</name>
       <roles>
-        <role>Developper</role>
+        <role>Developer</role>
       </roles>
       <organization>Silverpeas.com</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
@@ -185,7 +185,7 @@
       <name>Ludovic Bertin</name>
       <roles>
         <role>Project Manager</role>
-        <role>Developper</role>
+        <role>Developer</role>
       </roles>
       <organization>Oosphere</organization>
       <organizationUrl>http://www.oosphere.ch</organizationUrl>
@@ -194,7 +194,7 @@
       <id>ndupont</id>
       <name>Nicolas Dupont</name>
       <roles>
-        <role>Developper</role>
+        <role>Developer</role>
       </roles>
       <organization>Oosphere</organization>
       <organizationUrl>http://www.oosphere.ch</organizationUrl>
