@@ -503,7 +503,7 @@
       <dependency>
         <groupId>javax.ejb</groupId>
         <artifactId>ejb-api</artifactId>
-        <version>2.1</version>
+        <version>3.0</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
@@ -1761,7 +1761,8 @@
       <plugin>
         <artifactId>maven-ejb-plugin</artifactId>
         <configuration>
-          <generateClient>true</generateClient>
+          <ejbVersion>3.0</ejbVersion>
+          <generateClient>false</generateClient>
           <clientExcludes>
             <clientExclude>**/*DAO.class</clientExclude>
             <clientExclude>**/*EJB.class</clientExclude>
