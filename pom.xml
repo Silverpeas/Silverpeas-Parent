@@ -1762,7 +1762,7 @@
         <artifactId>maven-ejb-plugin</artifactId>
         <configuration>
           <ejbVersion>3.0</ejbVersion>
-          <generateClient>false</generateClient>
+          <generateClient>true</generateClient>
           <clientExcludes>
             <clientExclude>**/*DAO.class</clientExclude>
             <clientExclude>**/*EJB.class</clientExclude>
@@ -2008,7 +2008,7 @@
   <properties>
     <aspectj.version>1.6.12</aspectj.version>
     <bouncycastle.version>1.46</bouncycastle.version>
-    <jersey.version>1.17</jersey.version>
+    <jersey.version>1.17.1</jersey.version>
     <grizzly2.version>2.2.16</grizzly2.version>
     <jackson.version>1.9.10</jackson.version>
     <jackrabbit.version>2.6.0</jackrabbit.version>
