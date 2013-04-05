@@ -1821,6 +1821,8 @@
             <argLine>-XX:MaxPermSize=128m</argLine>
             <systemPropertyVariables>
               <user.timezone>Europe/Paris</user.timezone>
+              <user.language>fr</user.language>
+              <user.country>FR</user.country>
             </systemPropertyVariables>
           </configuration>
         </plugin>
