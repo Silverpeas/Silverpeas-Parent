@@ -1819,6 +1819,9 @@
           <configuration>
             <runOrder>alphabetical</runOrder>
             <argLine>-XX:MaxPermSize=128m</argLine>
+            <systemPropertyVariables>
+              <user.timezone>Europe/Paris</user.timezone>
+            </systemPropertyVariables>
           </configuration>
         </plugin>
         <plugin>
