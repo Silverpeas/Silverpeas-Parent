@@ -38,23 +38,23 @@
     <url>http://www.silverpeas.com</url>
   </organization>
   <url>http://www.silverpeas.org</url>
-  
+
   <ciManagement>
     <system>Jenkins</system>
     <url>http://integration.silverpeas.org/jenkins</url>
   </ciManagement>
-  
+
   <mailingLists>
     <mailingList>
       <name>Silverpeas Users List</name>
-      <archive>http://groups.google.com/group/silverpeas-users</archive>      
-    </mailingList> 
+      <archive>http://groups.google.com/group/silverpeas-users</archive>
+    </mailingList>
     <mailingList>
       <name>Silverpeas Development List</name>
-      <archive>http://groups.google.com/group/silverpeas-dev</archive>      
-    </mailingList> 
+      <archive>http://groups.google.com/group/silverpeas-dev</archive>
+    </mailingList>
   </mailingLists>
-  
+
   <licenses>
     <license>
       <name>GNU Affero General Public License with FLOSS Exception</name>
@@ -131,7 +131,7 @@
       <organization>Silverpeas</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
       <email>nicolas.eysseric@silverpeas.org</email>
-    </developer>    
+    </developer>
     <developer>
       <id>svuillet</id>
       <name>Sébastien Vuillet</name>
@@ -172,14 +172,14 @@
       <email>yohann.chastagnier@silverpeas.org</email>
     </developer>
   </developers>
-  
+
   <contributors>
     <contributor>
       <name>Umar Raad</name>
       <roles>
         <role>German translator</role>
       </roles>
-    </contributor>    
+    </contributor>
     <contributor>
       <name>Ludovic Bertin</name>
       <roles>
@@ -348,7 +348,7 @@
       </dependency>
       <dependency>
         <groupId>org.springframework.security</groupId>
-        <artifactId>spring-security-web</artifactId>      
+        <artifactId>spring-security-web</artifactId>
         <version>${spring.security.version}</version>
       </dependency>
       <dependency>
@@ -520,8 +520,8 @@
       </dependency>
       <dependency>
         <groupId>javax.servlet</groupId>
-        <artifactId>servlet-api</artifactId>
-        <version>2.5</version>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>3.0.1</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
@@ -774,7 +774,7 @@
           </exclusion>
           <exclusion>
             <groupId>org.bouncycastle</groupId>
-            <artifactId>bcmail</artifactId> 
+            <artifactId>bcmail</artifactId>
           </exclusion>
           <exclusion>
             <groupId>org.bouncycastle</groupId>
@@ -914,6 +914,12 @@
         <groupId>commons-logging</groupId>
         <artifactId>commons-logging</artifactId>
         <version>99.0-does-not-exist</version>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>commons-logging</groupId>
@@ -1240,7 +1246,7 @@
       <!-- pb version -->
       <dependency>
         <groupId>com.drewnoakes</groupId>
-        <artifactId>metadata-extractor</artifactId>        
+        <artifactId>metadata-extractor</artifactId>
         <version>2.6.2</version>
       </dependency>
       <dependency>
@@ -1261,7 +1267,7 @@
           <exclusion>
             <groupId>commons-logging</groupId>
             <artifactId>commons-logging</artifactId>
-          </exclusion> 
+          </exclusion>
           <exclusion>
             <groupId>commons-codec</groupId>
             <artifactId>commons-codec</artifactId>
@@ -1297,7 +1303,7 @@
         <artifactId>mail</artifactId>
         <version>1.4.5</version>
         <scope>provided</scope>
-      </dependency>      
+      </dependency>
       <dependency>
         <groupId>com.ecyrd.jspwiki</groupId>
         <artifactId>jspwiki_silverpeas</artifactId>
@@ -1313,8 +1319,14 @@
         <artifactId>xmlrpc</artifactId>
         <version>2.0.1</version>
         <scope>provided</scope>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
-      <dependency>          
+      <dependency>
         <groupId>org.apache.xmlbeans</groupId>
         <artifactId>xmlbeans</artifactId>
         <version>2.4.0</version>
@@ -1379,6 +1391,10 @@
           <exclusion>
             <groupId>javax.jms</groupId>
             <artifactId>jms</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -1447,7 +1463,7 @@
           <exclusion>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-          </exclusion>  
+          </exclusion>
         </exclusions>
       </dependency>
       <dependency>
@@ -1513,7 +1529,7 @@
         <artifactId>powermock-module-junit4-rule</artifactId>
         <version>${powermock.version}</version>
         <scope>test</scope>
-        <exclusions>          
+        <exclusions>
           <exclusion>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -1640,17 +1656,23 @@
         <artifactId>httpunit</artifactId>
         <version>1.6.2</version>
         <scope>test</scope>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.hamcrest</groupId>
         <artifactId>hamcrest-all</artifactId>
         <version>1.3</version>
         <scope>test</scope>
-      </dependency> 
+      </dependency>
       <dependency>
         <groupId>org.codehaus.groovy</groupId>
         <artifactId>groovy-all</artifactId>
-        <version>2.0.5</version> 
+        <version>2.0.5</version>
       </dependency>
       <dependency>
         <groupId>org.forgerock.opendj</groupId>
@@ -1764,7 +1786,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-ejb-plugin</artifactId>
-          <version>2.3</version>    
+          <version>2.3</version>
           <dependencies>
             <dependency>
               <groupId>org.codehaus.plexus</groupId>
@@ -2007,7 +2029,7 @@
     <plexusUtilsPluginsVersion>3.0.7</plexusUtilsPluginsVersion>
     <netbeans.version>RELEASE721</netbeans.version>
   </properties>
-  
+
   <prerequisites>
     <maven>3.0.4</maven>
   </prerequisites>
