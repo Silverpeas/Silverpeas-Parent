@@ -503,7 +503,7 @@
       <dependency>
         <groupId>javax.ejb</groupId>
         <artifactId>ejb-api</artifactId>
-        <version>2.1</version>
+        <version>3.0</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
@@ -520,8 +520,8 @@
       </dependency>
       <dependency>
         <groupId>javax.servlet</groupId>
-        <artifactId>servlet-api</artifactId>
-        <version>2.5</version>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>3.0.1</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
@@ -914,6 +914,12 @@
         <groupId>commons-logging</groupId>
         <artifactId>commons-logging</artifactId>
         <version>99.0-does-not-exist</version>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>commons-logging</groupId>
@@ -1350,6 +1356,12 @@
         <artifactId>xmlrpc</artifactId>
         <version>2.0.1</version>
         <scope>provided</scope>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.apache.xmlbeans</groupId>
@@ -1416,6 +1428,10 @@
           <exclusion>
             <groupId>javax.jms</groupId>
             <artifactId>jms</artifactId>
+          </exclusion>
+          <exclusion>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
           </exclusion>
         </exclusions>
       </dependency>
@@ -1684,6 +1700,12 @@
         <artifactId>httpunit</artifactId>
         <version>1.6.2</version>
         <scope>test</scope>
+        <exclusions>
+          <exclusion>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.hamcrest</groupId>
@@ -1789,6 +1811,7 @@
       <plugin>
         <artifactId>maven-ejb-plugin</artifactId>
         <configuration>
+          <ejbVersion>3.0</ejbVersion>
           <generateClient>true</generateClient>
           <clientExcludes>
             <clientExclude>**/*DAO.class</clientExclude>
