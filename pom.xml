@@ -345,11 +345,23 @@
         <groupId>org.springframework.security</groupId>
         <artifactId>spring-security-crypto</artifactId>
         <version>${spring.security.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.springframework.security</groupId>
         <artifactId>spring-security-web</artifactId>
         <version>${spring.security.version}</version>
+        <exclusions>
+          <exclusion>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-expression</artifactId>
+          </exclusion>
+        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.codehaus.jackson</groupId>
@@ -503,7 +515,7 @@
       <dependency>
         <groupId>javax.ejb</groupId>
         <artifactId>ejb-api</artifactId>
-        <version>3.0</version>
+        <version>3.1</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
@@ -1201,7 +1213,7 @@
       <dependency>
         <groupId>net.sourceforge.jtds</groupId>
         <artifactId>jtds</artifactId>
-        <version>1.2.5</version>
+        <version>1.2.7</version>
       </dependency>
       <dependency>
         <groupId>rome</groupId>
@@ -1818,6 +1830,14 @@
             <clientExclude>**/*EJB.class</clientExclude>
             <clientExclude>META-INF/*.xml</clientExclude>
           </clientExcludes>
+          <archive>
+            <index>true</index>
+            <manifest>
+              <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+              <addClasspath>false</addClasspath>
+              <useUniqueVersions>false</useUniqueVersions>
+            </manifest>
+          </archive>
         </configuration>
       </plugin>
     </plugins>
