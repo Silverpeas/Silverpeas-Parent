@@ -1494,6 +1494,11 @@
         <artifactId>im4java</artifactId>
         <version>1.2.0</version>
       </dependency>
+      <dependency>
+        <groupId>net.sourceforge.spnego</groupId>
+        <artifactId>spnego</artifactId>
+        <version>r8</version>
+      </dependency>
 
       <!--
         dependencies to compile and run tests
