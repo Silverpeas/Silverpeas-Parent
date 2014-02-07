@@ -1495,9 +1495,9 @@
         <version>1.2.0</version>
       </dependency>
       <dependency>
-        <groupId>net.sourceforge.spnego</groupId>
-        <artifactId>spnego</artifactId>
-        <version>r8</version>
+        <groupId>org.silverpeas.spnego</groupId>
+        <artifactId>silverpeas-spnego</artifactId>
+        <version>1.0</version>
       </dependency>
       <dependency>
         <groupId>org.owasp.encoder</groupId>
