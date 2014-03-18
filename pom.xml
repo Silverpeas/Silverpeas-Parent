@@ -1574,7 +1574,7 @@
       <dependency>
         <groupId>org.mockito</groupId>
         <artifactId>mockito-core</artifactId>
-        <version>1.9.0</version>
+        <version>1.9.5</version>
         <scope>test</scope>
         <exclusions>
           <exclusion>
@@ -2105,7 +2105,7 @@
     <poi.version>3.9</poi.version>
     <spring.version>3.2.2.RELEASE</spring.version>
     <spring.security.version>3.1.3.RELEASE</spring.security.version>
-    <powermock.version>1.4.12</powermock.version>
+    <powermock.version>1.5.4</powermock.version>
     <hibernate.version>4.1.11.Final</hibernate.version>
     <tika.version>1.3</tika.version>
     <owasp.version>1.1</owasp.version>
