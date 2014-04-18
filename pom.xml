@@ -1926,7 +1926,7 @@
           <version>2.14</version>
           <configuration>
             <runOrder>alphabetical</runOrder>
-            <argLine>-XX:MaxPermSize=128m</argLine>
+            <argLine>-XX:MaxPermSize=256m</argLine>
             <systemPropertyVariables>
               <user.timezone>Europe/Paris</user.timezone>
               <user.language>fr</user.language>
