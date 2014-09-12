@@ -35,7 +35,7 @@
   <name>parent</name>
   <organization>
     <name>Silverpeas</name>
-    <url>http://www.silverpeas.com</url>
+    <url>http://www.silverpeas.org</url>
   </organization>
   <url>http://www.silverpeas.org</url>
 
@@ -47,10 +47,14 @@
   <mailingLists>
     <mailingList>
       <name>Silverpeas Users List</name>
+      <subscribe>mailto:silverpeas-users+subscribe@googlegroups.com</subscribe>
+      <unsubscribe>mailto:silverpeas-users+unsubscribe@googlegroups.com</unsubscribe>
       <archive>http://groups.google.com/group/silverpeas-users</archive>
     </mailingList>
     <mailingList>
       <name>Silverpeas Development List</name>
+      <subscribe>mailto:silverpeas-dev+subscribe@googlegroups.com</subscribe>
+      <unsubscribe>mailto:silverpeas-dev+unsubscribe@googlegroups.com</unsubscribe>
       <archive>http://groups.google.com/group/silverpeas-dev</archive>
     </mailingList>
   </mailingLists>
@@ -99,17 +103,6 @@
       <organization>Silverpeas</organization>
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
       <email>miguel.moquillon@silverpeas.org</email>
-    </developer>
-    <developer>
-      <id>ehugonnet</id>
-      <name>Emmanuel Hugonnet</name>
-      <roles>
-        <role>Architect</role>
-        <role>Developer</role>
-      </roles>
-      <organization>Silverpeas</organization>
-      <organizationUrl>http://www.silverpeas.com</organizationUrl>
-      <email>emmanuel.hugonnet@silverpeas.org</email>
     </developer>
     <developer>
       <id>cbonin</id>
@@ -171,9 +164,28 @@
       <organizationUrl>http://www.silverpeas.com</organizationUrl>
       <email>yohann.chastagnier@silverpeas.org</email>
     </developer>
+    <developer>
+      <name>David Lesimple</name>
+      <roles>
+        <role>Support</role>
+        <role>System Administrator</role>
+        <role>Project Manager</role>
+      </roles>
+      <organization>Silverpeas</organization>
+      <organizationUrl>http://www.silverpeas.com</organizationUrl>
+    </developer>
   </developers>
 
   <contributors>
+    <contributor>
+      <name>Emmanuel Hugonnet</name>
+      <roles>
+        <role>Developer</role>
+        <role>Support</role>
+      </roles>
+      <organization>RedHat</organization>
+      <organizationUrl>http://www.redhat.com</organizationUrl>
+    </contributor>
     <contributor>
       <name>Umar Raad</name>
       <roles>
@@ -197,28 +209,10 @@
       <organization>Oosphere</organization>
       <organizationUrl>http://www.oosphere.ch</organizationUrl>
     </contributor>
-    <contributor>
-      <name>David Lesimple</name>
-      <roles>
-        <role>Support</role>
-        <role>Project Manager</role>
-      </roles>
-      <organization>Silverpeas</organization>
-      <organizationUrl>http://www.silverpeas.com</organizationUrl>
-    </contributor>
-    <contributor>
-      <name>Stéphanie Fariello</name>
-      <roles>
-        <role>Support</role>
-        <role>Project Manager</role>
-      </roles>
-      <organization>Silverpeas</organization>
-      <organizationUrl>http://www.silverpeas.com</organizationUrl>
-    </contributor>
   </contributors>
   <issueManagement>
     <system>Redmine</system>
-    <url>https://www.silverpeas.org/redmine/</url>
+    <url>https://tracker.silverpeas.org</url>
   </issueManagement>
 
   <repositories>
@@ -1958,7 +1952,15 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-source-plugin</artifactId>
-          <version>2.2.1</version>
+          <version>2.3</version>
+          <executions>
+            <execution>
+              <id>bundle-source</id>
+              <goals>
+                <goal>jar-no-fork</goal>
+              </goals>
+            </execution>
+          </executions>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
