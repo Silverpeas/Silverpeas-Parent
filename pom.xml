@@ -247,8 +247,25 @@
 
   <dependencyManagement>
     <dependencies>
+      <dependency>
+        <groupId>org.silverpeas</groupId>
+        <artifactId>silverpeas-dependencies-bom</artifactId>
+        <version>1-SNAPSHOT</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
+      <dependency>
+        <groupId>org.silverpeas</groupId>
+        <artifactId>silverpeas-test-dependencies-bom</artifactId>
+        <version>1-SNAPSHOT</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+
       <!--
-        dependencies required to compile and run Silverpeas
+        Specific dependencies of Silverpeas 5.
+        TODO: to remove once Silverpeas 6 is migrated to JEE 7 and Java 8
       -->
       <dependency>
         <groupId>org.springframework</groupId>
@@ -305,36 +322,7 @@
         <artifactId>spring-ldap-core</artifactId>
         <version>1.3.1.RELEASE</version>
       </dependency>
-      <dependency>
-        <groupId>org.springframework.social</groupId>
-        <artifactId>spring-social-linkedin</artifactId>
-        <version>1.0.0.RC1</version>
-        <exclusions>
-          <exclusion>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-core-asl</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-mapper-asl</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>org.springframework.social</groupId>
-        <artifactId>spring-social-facebook</artifactId>
-        <version>1.0.2.RELEASE</version>
-        <exclusions>
-          <exclusion>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-core-asl</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>org.codehaus.jackson</groupId>
-            <artifactId>jackson-mapper-asl</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
+      <!--
       <dependency>
         <groupId>org.springframework.security</groupId>
         <artifactId>spring-security-crypto</artifactId>
@@ -357,6 +345,7 @@
           </exclusion>
         </exclusions>
       </dependency>
+      -->
       <dependency>
         <groupId>org.codehaus.jackson</groupId>
         <artifactId>jackson-mapper-lgpl</artifactId>
@@ -496,11 +485,6 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>com.h2database</groupId>
-        <artifactId>h2</artifactId>
-        <version>1.3.168</version>
-      </dependency>
-      <dependency>
         <groupId>javax.servlet.jsp</groupId>
         <artifactId>jsp-api</artifactId>
         <version>2.2</version>
@@ -520,127 +504,20 @@
       </dependency>
       <dependency>
         <groupId>javax.servlet</groupId>
-        <artifactId>jstl</artifactId>
-        <version>1.2</version>
-        <scope>provided</scope>
-      </dependency>
-      <dependency>
-        <groupId>javax.servlet</groupId>
         <artifactId>javax.servlet-api</artifactId>
         <version>3.0.1</version>
         <scope>provided</scope>
       </dependency>
+      <!--
       <dependency>
         <groupId>taglibs</groupId>
         <artifactId>standard</artifactId>
         <version>1.1.2</version>
         <scope>provided</scope>
       </dependency>
-      <dependency>
-        <groupId>org.apache.poi</groupId>
-        <artifactId>poi</artifactId>
-        <version>${poi.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.poi</groupId>
-        <artifactId>poi-scratchpad</artifactId>
-        <version>${poi.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>log4j</groupId>
-            <artifactId>log4j</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.poi</groupId>
-        <artifactId>poi-ooxml</artifactId>
-        <version>${poi.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>org.apache.xmlbeans</groupId>
-            <artifactId>xmlbeans</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>xml-apis</groupId>
-            <artifactId>xml-apis</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>stax</groupId>
-            <artifactId>stax-api</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>org.apache.geronimo.specs</groupId>
-            <artifactId>geronimo-stax-api_1.0_spec</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.tika</groupId>
-        <artifactId>tika-core</artifactId>
-        <version>${tika.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.tika</groupId>
-        <artifactId>tika-parsers</artifactId>
-        <version>${tika.version}</version>
-        <exclusions>
-          <exclusion>
-            <groupId>javassist</groupId>
-            <artifactId>javassist</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>org.bouncycastle</groupId>
-            <artifactId>bcmail-jdk15</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>org.bouncycastle</groupId>
-            <artifactId>bcprov-jdk15</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>org.apache.geronimo.specs</groupId>
-            <artifactId>geronimo-stax-api_1.0_spec</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>com.drewnoakes</groupId>
-            <artifactId>metadata-extractor</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>commons-codec</groupId>
-            <artifactId>commons-codec</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>rome</groupId>
-            <artifactId>rome</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>net.sourceforge.nekohtml</groupId>
-        <artifactId>nekohtml</artifactId>
-        <version>1.9.15</version>
-      </dependency>
-      <dependency>
-        <groupId>org.bouncycastle</groupId>
-        <artifactId>bcprov-jdk16</artifactId>
-        <version>${bouncycastle.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.bouncycastle</groupId>
-        <artifactId>bcmail-jdk16</artifactId>
-        <version>${bouncycastle.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.bouncycastle</groupId>
-        <artifactId>bctsp-jdk16</artifactId>
-        <version>${bouncycastle.version}</version>
-      </dependency>
+      -->
+
+      <!--
       <dependency>
         <groupId>ant</groupId>
         <artifactId>ant</artifactId>
@@ -657,42 +534,36 @@
         <artifactId>jChatBox</artifactId>
         <version>2.6</version>
       </dependency>
-      <dependency>
-        <groupId>xerces</groupId>
-        <artifactId>xercesImpl</artifactId>
-        <version>2.10.0</version>
-        <scope>provided</scope>
-      </dependency>
+      -->
+      <!--
       <dependency>
         <groupId>commons-beanutils</groupId>
         <artifactId>commons-beanutils</artifactId>
         <version>1.8.3</version>
       </dependency>
-      <dependency>
-        <groupId>commons-codec</groupId>
-        <artifactId>commons-codec</artifactId>
-        <version>1.7</version>
-      </dependency>
+      -->
+      <!--
       <dependency>
         <groupId>commons-collections</groupId>
         <artifactId>commons-collections</artifactId>
         <version>3.2.1</version>
       </dependency>
+      -->
+      <!--
       <dependency>
         <groupId>commons-dbcp</groupId>
         <artifactId>commons-dbcp</artifactId>
         <version>1.4</version>
       </dependency>
+      -->
+      <!--
       <dependency>
         <groupId>commons-digester</groupId>
         <artifactId>commons-digester</artifactId>
         <version>2.1</version>
       </dependency>
-      <dependency>
-        <groupId>commons-fileupload</groupId>
-        <artifactId>commons-fileupload</artifactId>
-        <version>1.2.2</version>
-      </dependency>
+      -->
+      <!--
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-compress</artifactId>
@@ -709,16 +580,8 @@
           </exclusion>
         </exclusions>
       </dependency>
-      <dependency>
-        <groupId>commons-io</groupId>
-        <artifactId>commons-io</artifactId>
-        <version>2.4</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.commons</groupId>
-        <artifactId>commons-lang3</artifactId>
-        <version>3.1</version>
-      </dependency>
+      -->
+      <!--
       <dependency>
         <groupId>commons-lang</groupId>
         <artifactId>commons-lang</artifactId>
@@ -729,41 +592,14 @@
         <artifactId>commons-pool</artifactId>
         <version>1.6</version>
       </dependency>
-      <dependency>
-        <groupId>org.apache.commons</groupId>
-        <artifactId>commons-exec</artifactId>
-        <version>1.1</version>
-      </dependency>
-      <dependency>
-        <groupId>org.jasig.cas.client</groupId>
-        <artifactId>cas-client-core</artifactId>
-        <version>3.2.1</version>
-      </dependency>
-      <dependency>
-        <groupId>net.sourceforge</groupId>
-        <artifactId>cryptolib</artifactId>
-        <version>1.0</version>
-      </dependency>
-      <dependency>
-        <groupId>ecs</groupId>
-        <artifactId>ecs</artifactId>
-        <version>1.4.2</version>
-      </dependency>
+      -->
+      <!--
       <dependency>
         <groupId>org.samba.jcifs</groupId>
         <artifactId>jcifs</artifactId>
         <version>1.3.14</version>
       </dependency>
-      <dependency>
-        <groupId>com.novell.ldap</groupId>
-        <artifactId>jldap</artifactId>
-        <version>2009-10-07</version>
-      </dependency>
-      <dependency>
-        <groupId>javax.jcr</groupId>
-        <artifactId>jcr</artifactId>
-        <version>2.0</version>
-      </dependency>
+      -->
       <dependency>
         <groupId>org.apache.jackrabbit</groupId>
         <artifactId>jackrabbit-api</artifactId>
@@ -910,58 +746,6 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-api</artifactId>
-        <version>${slf4j.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>slf4j-log4j12</artifactId>
-        <version>${slf4j.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.slf4j</groupId>
-        <artifactId>jcl-over-slf4j</artifactId>
-        <version>${slf4j.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>commons-logging</groupId>
-        <artifactId>commons-logging</artifactId>
-        <version>99.0-does-not-exist</version>
-        <exclusions>
-          <exclusion>
-            <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>commons-logging</groupId>
-        <artifactId>commons-logging-api</artifactId>
-        <version>99.0-does-not-exist</version>
-      </dependency>
-      <dependency>
-        <groupId>log4j</groupId>
-        <artifactId>log4j</artifactId>
-        <version>1.2.17</version>
-        <!--
-        <exclusions>
-          <exclusion>
-            <groupId>javax.jms</groupId>
-            <artifactId>jms</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>com.sun.jdmk</groupId>
-            <artifactId>jmxtools</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>com.sun.jmx</groupId>
-            <artifactId>jmxri</artifactId>
-          </exclusion>
-        </exclusions>
-        -->
-      </dependency>
-      <dependency>
         <groupId>javax.inject</groupId>
         <artifactId>javax.inject</artifactId>
         <version>1</version>
@@ -1070,301 +854,53 @@
         <version>4.2.0.Final</version>
         <scope>provided</scope>
       </dependency>
-      <dependency>
-        <groupId>net.sf.ehcache</groupId>
-        <artifactId>ehcache-core</artifactId>
-        <version>2.6.6</version>
-        <exclusions>
-          <exclusion>
-            <groupId>backport-util-concurrent</groupId>
-            <artifactId>backport-util-concurrent</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>cglib</groupId>
-            <artifactId>cglib</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
+      <!--
       <dependency>
         <groupId>cos</groupId>
         <artifactId>cos</artifactId>
         <version>05Nov2002</version>
       </dependency>
-      <dependency>
-        <groupId>org.codehaus.castor</groupId>
-        <artifactId>castor-jdo</artifactId>
-        <version>1.2</version>
-        <exclusions>
-          <exclusion>
-            <groupId>cglib</groupId>
-            <artifactId>cglib-full</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>org.codehaus.castor</groupId>
-            <artifactId>castor-xml-schema</artifactId>
-          </exclusion>
-          <exclusion>
-            <artifactId>jta</artifactId>
-            <groupId>javax.transaction</groupId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>org.codehaus.castor</groupId>
-        <artifactId>castor</artifactId>
-        <version>1.2</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.lucene</groupId>
-        <artifactId>lucene-core</artifactId>
-        <version>${lucene.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.lucene</groupId>
-        <artifactId>lucene-analyzers</artifactId>
-        <version>${lucene.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.lucene</groupId>
-        <artifactId>lucene-spellchecker</artifactId>
-        <version>${lucene.version}</version>
-      </dependency>
+      -->
       <!--
       <dependency>
         <groupId>org.apache.lucene</groupId>
         <artifactId>lucene-snowball</artifactId>
         <version>${lucene.version}</version>
       </dependency>-->
-      <dependency>
-        <groupId>org.jdom</groupId>
-        <artifactId>jdom</artifactId>
-        <version>1.1.1</version>
-      </dependency>
-      <dependency>
-        <groupId>net.htmlparser.jericho</groupId>
-        <artifactId>jericho-html</artifactId>
-        <version>2.5</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.pdfbox</groupId>
-        <artifactId>pdfbox</artifactId>
-        <version>1.8.4</version>
-        <exclusions>
-          <exclusion>
-            <groupId>org.bouncycastle</groupId>
-            <artifactId>bcmail-jdk14</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>org.bouncycastle</groupId>
-            <artifactId>bcprov-jdk14</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>org.bouncycastle</groupId>
-            <artifactId>bctsp-jdk14</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>bouncycastle</groupId>
-            <artifactId>bcmail-jdk14</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>bouncycastle</groupId>
-            <artifactId>bcprov-jdk14</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>bouncycastle</groupId>
-            <artifactId>bctsp-jdk14</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>com.lowagie</groupId>
-        <artifactId>itext</artifactId>
-        <version>2.1.7</version>
-        <exclusions>
-          <exclusion>
-            <groupId>org.bouncycastle</groupId>
-            <artifactId>bcmail-jdk14</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>org.bouncycastle</groupId>
-            <artifactId>bcprov-jdk14</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>org.bouncycastle</groupId>
-            <artifactId>bctsp-jdk14</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>bouncycastle</groupId>
-            <artifactId>bcmail-jdk14</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>bouncycastle</groupId>
-            <artifactId>bcprov-jdk14</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>bouncycastle</groupId>
-            <artifactId>bctsp-jdk14</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>postgresql</groupId>
-        <artifactId>postgresql</artifactId>
-        <version>9.2-1002.jdbc4</version>
-      </dependency>
-      <dependency>
-        <groupId>net.sourceforge.jtds</groupId>
-        <artifactId>jtds</artifactId>
-        <version>1.2.7</version>
-      </dependency>
-      <dependency>
-        <groupId>rome</groupId>
-        <artifactId>rome</artifactId>
-        <version>1.0</version>
-        <exclusions>
-          <exclusion>
-            <groupId>jdom</groupId>
-            <artifactId>jdom</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>informa</groupId>
-        <artifactId>informa</artifactId>
-        <version>0.6.5</version>
-        <classifier>silverpeas</classifier>
-        <exclusions>
-          <exclusion>
-            <groupId>jdom</groupId>
-            <artifactId>jdom</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>commons-logging</groupId>
-            <artifactId>commons-logging</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>lucene</groupId>
-            <artifactId>lucene</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>hibernate</groupId>
-            <artifactId>hibernate</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>cglib</groupId>
-            <artifactId>cglib</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>commons-lang</groupId>
-            <artifactId>commons-lang</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>commons-beanutils</groupId>
-            <artifactId>commons-beanutils</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>commons-collections</groupId>
-            <artifactId>commons-collections</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>dom4j</groupId>
-            <artifactId>dom4j</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>odmg</groupId>
-            <artifactId>odmg</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>ehcache</groupId>
-            <artifactId>ehcache</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>hsqldb</groupId>
-            <artifactId>hsqldb</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
+      <!--
       <dependency>
         <groupId>net.sf.jtidy</groupId>
         <artifactId>jtidy</artifactId>
         <version>r938</version>
       </dependency>
-      <dependency>
-        <groupId>jcharts</groupId>
-        <artifactId>jcharts</artifactId>
-        <version>0.7.5</version>
-      </dependency>
-      <!-- pb version -->
-      <dependency>
-        <groupId>com.drewnoakes</groupId>
-        <artifactId>metadata-extractor</artifactId>
-        <version>2.6.2</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.sanselan</groupId>
-        <artifactId>sanselan</artifactId>
-        <version>0.97-incubator</version>
-      </dependency>
+      -->
+      <!--
       <dependency>
         <groupId>org.textmining</groupId>
         <artifactId>tm-extractors</artifactId>
         <version>0.4</version>
       </dependency>
-      <dependency>
-        <groupId>org.mnode.ical4j</groupId>
-        <artifactId>ical4j</artifactId>
-        <version>1.0.5.2</version>
-        <exclusions>
-          <exclusion>
-            <groupId>commons-logging</groupId>
-            <artifactId>commons-logging</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>commons-codec</groupId>
-            <artifactId>commons-codec</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>commons-lang</groupId>
-            <artifactId>commons-lang</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>javax.portlet</groupId>
-        <artifactId>portlet-api</artifactId>
-        <version>2.0</version>
-      </dependency>
-      <dependency>
-        <groupId>javax.ccpp</groupId>
-        <artifactId>ccpp</artifactId>
-        <version>1.0</version>
-      </dependency>
-      <dependency>
-        <groupId>com.sun.portal.portletcontainer</groupId>
-        <artifactId>container</artifactId>
-        <version>2.1</version>
-      </dependency>
-      <dependency>
-        <groupId>com.sun.portal.portletcontainer</groupId>
-        <artifactId>portlet-container</artifactId>
-        <version>2.1</version>
-      </dependency>
+      -->
       <dependency>
         <groupId>javax.mail</groupId>
         <artifactId>mail</artifactId>
         <version>1.4.5</version>
         <scope>provided</scope>
       </dependency>
+      <!--
       <dependency>
         <groupId>com.ecyrd.jspwiki</groupId>
         <artifactId>jspwiki_silverpeas</artifactId>
         <version>2.8.1</version>
       </dependency>
+      -->
+      <!-- to remove its use by replacing it with jackson -->
       <dependency>
         <groupId>com.metaparadigm</groupId>
         <artifactId>json-rpc</artifactId>
         <version>1.0</version>
       </dependency>
+      <!--
       <dependency>
         <groupId>org.apache.ws.xmlrpc</groupId>
         <artifactId>xmlrpc</artifactId>
@@ -1377,6 +913,8 @@
           </exclusion>
         </exclusions>
       </dependency>
+      -->
+      <!--
       <dependency>
         <groupId>org.apache.xmlbeans</groupId>
         <artifactId>xmlbeans</artifactId>
@@ -1389,17 +927,21 @@
           </exclusion>
         </exclusions>
       </dependency>
+      -->
       <dependency>
         <groupId>javax.activation</groupId>
         <artifactId>activation</artifactId>
         <version>1.1.1</version>
         <scope>provided</scope>
       </dependency>
+      <!--
       <dependency>
         <groupId>sandler</groupId>
         <artifactId>sandler</artifactId>
         <version>1.0</version>
       </dependency>
+      -->
+      <!--
       <dependency>
         <groupId>jaxen</groupId>
         <artifactId>jaxen</artifactId>
@@ -1424,7 +966,8 @@
           </exclusion>
         </exclusions>
       </dependency>
-      <dependency>
+      -->
+      <!--<dependency>
         <groupId>commons-jrcs</groupId>
         <artifactId>jrcs-diff</artifactId>
         <version>0.2</version>
@@ -1433,100 +976,16 @@
         <groupId>org.freshcookies</groupId>
         <artifactId>freshcookies-security</artifactId>
         <version>0.60</version>
-      </dependency>
-      <dependency>
-        <groupId>opensymphony</groupId>
-        <artifactId>oscache</artifactId>
-        <version>2.4.1</version>
-        <exclusions>
-          <exclusion>
-            <groupId>javax.jms</groupId>
-            <artifactId>jms</artifactId>
-          </exclusion>
-          <exclusion>
-            <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
+      </dependency>-->
+      <!--<dependency>
         <groupId>oro</groupId>
         <artifactId>oro</artifactId>
         <version>2.0.8</version>
-      </dependency>
-      <dependency>
-        <groupId>com.thoughtworks.xstream</groupId>
-        <artifactId>xstream</artifactId>
-        <version>1.4.3</version>
-      </dependency>
-      <dependency>
-        <groupId>com.ibm.icu</groupId>
-        <artifactId>icu4j</artifactId>
-        <version>4.4</version>
-      </dependency>
-      <dependency>
-        <groupId>org.antlr</groupId>
-        <artifactId>stringtemplate</artifactId>
-        <version>3.2.1</version>
-        <exclusions>
-          <!-- antlr is provided by the JEE container -->
-          <exclusion>
-            <groupId>antlr</groupId>
-            <artifactId>antlr</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
-      <dependency>
-        <groupId>org.quartz-scheduler</groupId>
-        <artifactId>quartz</artifactId>
-        <version>1.8.4</version>
-      </dependency>
-      <dependency>
-        <groupId>org.odftoolkit</groupId>
-        <artifactId>simple-odf</artifactId>
-        <version>0.6.6</version>
-      </dependency>
-      <dependency>
-        <groupId>com.artofsolving</groupId>
-        <artifactId>jodconverter</artifactId>
-        <version>2.2.1</version>
-      </dependency>
-      <dependency>
-        <groupId>org.im4java</groupId>
-        <artifactId>im4java</artifactId>
-        <version>1.2.0</version>
-      </dependency>
-      <dependency>
-        <groupId>org.silverpeas.spnego</groupId>
-        <artifactId>silverpeas-spnego</artifactId>
-        <version>1.0</version>
-      </dependency>
-      <dependency>
-        <groupId>org.owasp.encoder</groupId>
-        <artifactId>encoder</artifactId>
-        <version>${owasp.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>org.owasp.encoder</groupId>
-        <artifactId>encoder-jsp</artifactId>
-        <version>${owasp.version}</version>
-      </dependency>
+      </dependency>-->
 
       <!--
         dependencies to compile and run tests
       -->
-      <dependency>
-        <groupId>junit</groupId>
-        <artifactId>junit</artifactId>
-        <version>4.11</version>
-        <scope>test</scope>
-        <exclusions>
-          <exclusion>
-            <groupId>org.hamcrest</groupId>
-            <artifactId>hamcrest-core</artifactId>
-          </exclusion>
-        </exclusions>
-      </dependency>
       <dependency>
         <groupId>org.springframework</groupId>
         <artifactId>spring-test</artifactId>
@@ -1572,18 +1031,6 @@
         <artifactId>jersey-apache-client</artifactId>
         <version>${jersey.version}</version>
         <scope>test</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.mockito</groupId>
-        <artifactId>mockito-core</artifactId>
-        <version>1.9.5</version>
-        <scope>test</scope>
-        <exclusions>
-          <exclusion>
-            <groupId>org.hamcrest</groupId>
-            <artifactId>hamcrest-core</artifactId>
-          </exclusion>
-        </exclusions>
       </dependency>
       <dependency>
         <groupId>org.powermock</groupId>
@@ -1737,12 +1184,6 @@
         </exclusions>
       </dependency>
       <dependency>
-        <groupId>org.hamcrest</groupId>
-        <artifactId>hamcrest-all</artifactId>
-        <version>1.3</version>
-        <scope>test</scope>
-      </dependency>
-      <dependency>
         <groupId>org.codehaus.groovy</groupId>
         <artifactId>groovy-all</artifactId>
         <version>2.0.5</version>
@@ -1816,16 +1257,13 @@
         </configuration>
       </plugin>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
-        <configuration>
-          <source>1.6</source>
-          <target>1.6</target>
-          <encoding>UTF-8</encoding>
-          <showDeprecation>true</showDeprecation>
-        </configuration>
       </plugin>
       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-resources-plugin</artifactId>
+        <version>2.6</version>
         <configuration>
           <encoding>UTF-8</encoding>
         </configuration>
@@ -1862,18 +1300,22 @@
           <version>2.5</version>
         </plugin>
         <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jarsigner-plugin</artifactId>
           <version>1.3.2</version>
         </plugin>
         <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-resources-plugin</artifactId>
           <version>2.6</version>
         </plugin>
         <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-dependency-plugin</artifactId>
           <version>2.8</version>
         </plugin>
         <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-ejb-plugin</artifactId>
           <version>2.3</version>
           <dependencies>
@@ -1885,6 +1327,7 @@
           </dependencies>
         </plugin>
         <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-war-plugin</artifactId>
           <version>2.4</version>
           <dependencies>
@@ -1896,14 +1339,22 @@
           </dependencies>
         </plugin>
         <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.1</version>
+          <configuration>
+            <source>1.8</source>
+            <target>1.8</target>
+            <encoding>UTF-8</encoding>
+            <showDeprecation>true</showDeprecation>
+          </configuration>
         </plugin>
         <plugin>
           <artifactId>maven-eclipse-plugin</artifactId>
           <version>2.9</version>
         </plugin>
         <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-jar-plugin</artifactId>
           <version>2.4</version>
           <dependencies>
@@ -1915,6 +1366,7 @@
           </dependencies>
         </plugin>
         <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-clean-plugin</artifactId>
           <version>2.5</version>
         </plugin>
@@ -1928,6 +1380,8 @@
           <artifactId>maven-surefire-plugin</artifactId>
           <version>2.17</version>
           <configuration>
+            <forkCount>2C</forkCount>
+            <reuseForks>true</reuseForks>
             <runOrder>alphabetical</runOrder>
             <argLine>-XX:MaxPermSize=256m</argLine>
             <systemPropertyVariables>
@@ -2022,6 +1476,106 @@
 
   <profiles>
     <profile>
+      <id>integration-test</id>
+      <activation>
+        <property>
+          <name>context</name>
+          <value>ci</value>
+        </property>
+      </activation>
+      <properties>
+        <jcr.home>${project.build.directory}/jcr</jcr.home>
+        <jcr.conf>${jcr.home}/repository.xml</jcr.conf>
+      </properties>
+      <build>
+        <testResources>
+          <testResource>
+            <directory>src/integration-test/resources</directory>
+            <filtering>true</filtering>
+            <includes>
+              <include>**/*.properties</include>
+            </includes>
+          </testResource>
+          <testResource>
+            <directory>src/test/resources</directory>
+            <filtering>false</filtering>
+          </testResource>
+        </testResources>
+        <plugins>
+          <plugin>
+            <groupId>org.codehaus.mojo</groupId>
+            <artifactId>build-helper-maven-plugin</artifactId>
+            <version>1.9</version>
+            <executions>
+              <execution>
+                <id>add-integration-test-sources</id>
+                <phase>generate-test-sources</phase>
+                <goals>
+                  <goal>add-test-source</goal>
+                  <goal>add-test-resource</goal>
+                </goals>
+                <configuration>
+                  <sources>
+                    <source>src/integration-test/java</source>
+                  </sources>
+                  <resources>
+                    <resource>
+                      <directory>src/integration-test/resources</directory>
+                    </resource>
+                  </resources>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-dependency-plugin</artifactId>
+            <version>2.8</version>
+            <executions>
+              <execution>
+                <id>unpack</id>
+                <phase>process-test-classes</phase>
+                <goals>
+                  <goal>unpack</goal>
+                </goals>
+                <configuration>
+                  <artifactItems>
+                    <artifactItem>
+                      <groupId>org.wildfly</groupId>
+                      <artifactId>wildfly-dist</artifactId>
+                      <version>${wildfly.version}</version>
+                      <type>zip</type>
+                      <overWrite>false</overWrite>
+                      <outputDirectory>target</outputDirectory>
+                    </artifactItem>
+                  </artifactItems>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>2.17</version>
+            <configuration>
+              <forkCount>1</forkCount>
+              <reuseForks>true</reuseForks>
+              <environmentVariables>
+                <JBOSS_HOME>${project.build.directory}/wildfly-${wildfly.version}</JBOSS_HOME>
+              </environmentVariables>
+              <systemPropertyVariables>
+                <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>
+                <jboss.home>${project.build.directory}/wildfly-${wildfly.version}</jboss.home>
+                <module.path>${project.build.directory}/wildfly-${wildfly.version}/modules</module.path>
+                <jboss.server.config.file.name>standalone-full.xml</jboss.server.config.file.name>
+              </systemPropertyVariables>
+              <redirectTestOutputToFile>false</redirectTestOutputToFile>
+            </configuration>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <profile>
       <id>license</id>
       <build>
         <plugins>
@@ -2097,8 +1651,8 @@
   </profiles>
 
   <properties>
+    <!-- to remove once migrated -->
     <aspectj.version>1.7.2</aspectj.version>
-    <bouncycastle.version>1.46</bouncycastle.version>
     <jersey.version>1.18.1</jersey.version>
     <grizzly2.version>2.2.21</grizzly2.version>
     <jackson.version>1.9.12</jackson.version>
@@ -2106,15 +1660,13 @@
     <mockrunner.version>0.4.2</mockrunner.version>
     <wagon.version>2.0</wagon.version>
     <config.version>2.2</config.version>
-    <slf4j.version>1.5.6</slf4j.version>
-    <lucene.version>3.6.2</lucene.version>
-    <poi.version>3.10-beta2</poi.version>
     <spring.version>3.2.2.RELEASE</spring.version>
     <spring.security.version>3.1.3.RELEASE</spring.security.version>
     <powermock.version>1.5.4</powermock.version>
     <hibernate.version>4.1.11.Final</hibernate.version>
-    <tika.version>1.5</tika.version>
-    <owasp.version>1.1</owasp.version>
+    <!-- end to remove -->
+
+    <wildfly.version>8.1.0.Final</wildfly.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <netbeans.hint.license>agpl30</netbeans.hint.license>
