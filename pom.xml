@@ -31,7 +31,7 @@
   <packaging>pom</packaging>
   <artifactId>parent</artifactId>
   <groupId>com.silverpeas</groupId>
-  <version>28-SNAPSHOT</version>
+  <version>28</version>
   <name>parent</name>
   <organization>
     <name>Silverpeas</name>
@@ -90,7 +90,7 @@
     <connection>scm:git:git@github.com:Silverpeas/Silverpeas-Parent.git</connection>
     <developerConnection>scm:git:git@github.com:Silverpeas/Silverpeas-Parent.git</developerConnection>
     <url>http://gitub.com/Silverpeas/Silverpeas-Parent.git</url>
-    <tag>HEAD</tag>
+    <tag>parent-28</tag>
   </scm>
   <developers>
     <developer>
