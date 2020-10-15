@@ -31,13 +31,13 @@
   <packaging>pom</packaging>
   <artifactId>parent</artifactId>
   <groupId>com.silverpeas</groupId>
-  <version>30-SNAPSHOT</version>
+  <version>29.1</version>
   <name>parent</name>
   <organization>
     <name>Silverpeas</name>
-    <url>http://www.silverpeas.org</url>
+    <url>https://www.silverpeas.org</url>
   </organization>
-  <url>http://www.silverpeas.org</url>
+  <url>https://www.silverpeas.org</url>
 
   <ciManagement>
     <system>Jenkins</system>
@@ -49,13 +49,13 @@
       <name>Silverpeas Users List</name>
       <subscribe>mailto:silverpeas-users+subscribe@googlegroups.com</subscribe>
       <unsubscribe>mailto:silverpeas-users+unsubscribe@googlegroups.com</unsubscribe>
-      <archive>http://groups.google.com/group/silverpeas-users</archive>
+      <archive>https://groups.google.com/group/silverpeas-users</archive>
     </mailingList>
     <mailingList>
       <name>Silverpeas Development List</name>
       <subscribe>mailto:silverpeas-dev+subscribe@googlegroups.com</subscribe>
       <unsubscribe>mailto:silverpeas-dev+unsubscribe@googlegroups.com</unsubscribe>
-      <archive>http://groups.google.com/group/silverpeas-dev</archive>
+      <archive>https://groups.google.com/group/silverpeas-dev</archive>
     </mailingList>
   </mailingLists>
 
@@ -63,7 +63,7 @@
     <license>
       <name>GNU Affero General Public License with FLOSS Exception</name>
       <distribution>repo</distribution>
-      <url>http://www.silverpeas.org/legal/gnu_affero.html</url>
+      <url>https://www.silverpeas.org/legal/gnu_affero.html</url>
     </license>
   </licenses>
 
@@ -72,13 +72,13 @@
       <id>silverpeas</id>
       <name>Repository Silverpeas</name>
       <layout>default</layout>
-      <url>http://www.silverpeas.org/nexus/content/repositories/releases/</url>
+      <url>https://www.silverpeas.org/nexus/content/repositories/releases/</url>
     </repository>
     <snapshotRepository>
       <id>silverpeas-snapshots</id>
       <name>Snapshots Repository Silverpeas</name>
       <layout>default</layout>
-      <url>http://www.silverpeas.org/nexus/content/repositories/snapshots/</url>
+      <url>https://www.silverpeas.org/nexus/content/repositories/snapshots/</url>
     </snapshotRepository>
     <site>
       <id>silverpeas_repository</id>
@@ -89,7 +89,7 @@
   <scm>
     <connection>scm:git:git@github.com:Silverpeas/Silverpeas-Parent.git</connection>
     <developerConnection>scm:git:git@github.com:Silverpeas/Silverpeas-Parent.git</developerConnection>
-    <url>http://gitub.com/Silverpeas/Silverpeas-Parent.git</url>
+    <url>https://gitub.com/Silverpeas/Silverpeas-Parent.git</url>
     <tag>HEAD</tag>
   </scm>
   <developers>
@@ -101,7 +101,7 @@
         <role>Developer</role>
       </roles>
       <organization>Silverpeas</organization>
-      <organizationUrl>http://www.silverpeas.com</organizationUrl>
+      <organizationUrl>https://www.silverpeas.com</organizationUrl>
       <email>miguel.moquillon@silverpeas.org</email>
     </developer>
     <developer>
@@ -112,7 +112,7 @@
         <role>Developer</role>
       </roles>
       <organization>Silverpeas</organization>
-      <organizationUrl>http://www.silverpeas.com</organizationUrl>
+      <organizationUrl>https://www.silverpeas.com</organizationUrl>
     </developer>
     <developer>
       <id>neysseric</id>
@@ -122,7 +122,7 @@
         <role>Developer</role>
       </roles>
       <organization>Silverpeas</organization>
-      <organizationUrl>http://www.silverpeas.com</organizationUrl>
+      <organizationUrl>https://www.silverpeas.com</organizationUrl>
       <email>nicolas.eysseric@silverpeas.org</email>
     </developer>
     <developer>
@@ -133,7 +133,7 @@
         <role>Project Manager</role>
       </roles>
       <organization>Silverpeas</organization>
-      <organizationUrl>http://www.silverpeas.com</organizationUrl>
+      <organizationUrl>https://www.silverpeas.com</organizationUrl>
     </developer>
     <developer>
       <id>ebonnet</id>
@@ -143,7 +143,7 @@
         <role>Developer</role>
       </roles>
       <organization>Silverpeas.com</organization>
-      <organizationUrl>http://www.silverpeas.com</organizationUrl>
+      <organizationUrl>https://www.silverpeas.com</organizationUrl>
     </developer>
     <developer>
       <id>aallibe</id>
@@ -152,7 +152,7 @@
         <role>Web Designer</role>
       </roles>
       <organization>Silverpeas.com</organization>
-      <organizationUrl>http://www.silverpeas.com</organizationUrl>
+      <organizationUrl>https://www.silverpeas.com</organizationUrl>
     </developer>
     <developer>
       <id>ychastagnier</id>
@@ -161,7 +161,7 @@
         <role>Developer</role>
       </roles>
       <organization>Silverpeas.com</organization>
-      <organizationUrl>http://www.silverpeas.com</organizationUrl>
+      <organizationUrl>https://www.silverpeas.com</organizationUrl>
       <email>yohann.chastagnier@silverpeas.org</email>
     </developer>
     <developer>
@@ -172,7 +172,7 @@
         <role>Project Manager</role>
       </roles>
       <organization>Silverpeas</organization>
-      <organizationUrl>http://www.silverpeas.com</organizationUrl>
+      <organizationUrl>https://www.silverpeas.com</organizationUrl>
     </developer>
   </developers>
 
@@ -184,7 +184,7 @@
         <role>Support</role>
       </roles>
       <organization>RedHat</organization>
-      <organizationUrl>http://www.redhat.com</organizationUrl>
+      <organizationUrl>https://www.redhat.com</organizationUrl>
     </contributor>
     <contributor>
       <name>Umar Raad</name>
@@ -199,7 +199,7 @@
         <role>Developer</role>
       </roles>
       <organization>Oosphere</organization>
-      <organizationUrl>http://www.oosphere.ch</organizationUrl>
+      <organizationUrl>https://www.oosphere.ch</organizationUrl>
     </contributor>
     <contributor>
       <name>Nicolas Dupont</name>
@@ -207,7 +207,7 @@
         <role>Developer</role>
       </roles>
       <organization>Oosphere</organization>
-      <organizationUrl>http://www.oosphere.ch</organizationUrl>
+      <organizationUrl>https://www.oosphere.ch</organizationUrl>
     </contributor>
   </contributors>
   <issueManagement>
@@ -220,7 +220,7 @@
       <id>Silverpeas</id>
       <layout>default</layout>
       <name>Silverpeas Repository</name>
-      <url>http://www.silverpeas.org/nexus/content/groups/silverpeas</url>
+      <url>https://www.silverpeas.org/nexus/content/groups/silverpeas</url>
       <releases>
         <enabled>true</enabled>
       </releases>
@@ -235,7 +235,7 @@
       <id>Silverpeas</id>
       <layout>default</layout>
       <name>Silverpeas Repository</name>
-      <url>http://www.silverpeas.org/nexus/content/groups/silverpeas</url>
+      <url>https://www.silverpeas.org/nexus/content/groups/silverpeas</url>
       <releases>
         <enabled>true</enabled>
       </releases>
